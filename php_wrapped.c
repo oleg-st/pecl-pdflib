@@ -35,7 +35,7 @@ PHP_FUNCTION(pdf_activate_item)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -117,7 +117,7 @@ PHP_FUNCTION(pdf_add_bookmark)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -147,7 +147,7 @@ php_error_docref(NULL TSRMLS_CC, E_DEPRECATED, "Deprecated, use  PDF_create_book
 	_result = PDF_add_bookmark2(pdf, text, (int)text_len, (int)parent, (int)open);
     } pdf_catch;
 
-    
+
     RETURN_LONG(_result);
 }
 /* }}} */
@@ -192,7 +192,7 @@ PHP_FUNCTION(pdf_add_launchlink)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -272,7 +272,7 @@ PHP_FUNCTION(pdf_add_locallink)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -350,7 +350,7 @@ PHP_FUNCTION(pdf_add_nameddest)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -447,7 +447,7 @@ PHP_FUNCTION(pdf_add_note)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -538,7 +538,7 @@ PHP_FUNCTION(pdf_add_path_point)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -626,7 +626,7 @@ PHP_FUNCTION(pdf_add_pdflink)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -712,7 +712,7 @@ PHP_FUNCTION(pdf_add_portfolio_file)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -798,7 +798,7 @@ PHP_FUNCTION(pdf_add_portfolio_folder)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -896,7 +896,7 @@ PHP_FUNCTION(pdf_add_table_cell)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -982,7 +982,7 @@ PHP_FUNCTION(pdf_add_textflow)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1052,7 +1052,7 @@ PHP_FUNCTION(pdf_add_thumbnail)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1127,7 +1127,7 @@ PHP_FUNCTION(pdf_add_weblink)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1193,7 +1193,7 @@ PHP_FUNCTION(pdf_align)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1260,7 +1260,7 @@ PHP_FUNCTION(pdf_arc)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1326,7 +1326,7 @@ PHP_FUNCTION(pdf_arcn)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1428,7 +1428,7 @@ PHP_FUNCTION(pdf_attach_file)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1512,7 +1512,7 @@ PHP_FUNCTION(pdf_begin_document)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1589,7 +1589,7 @@ PHP_FUNCTION(pdf_begin_dpart)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1672,7 +1672,7 @@ PHP_FUNCTION(pdf_begin_font)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1747,7 +1747,7 @@ PHP_FUNCTION(pdf_begin_glyph)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1826,7 +1826,7 @@ PHP_FUNCTION(pdf_begin_glyph_ext)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1904,7 +1904,7 @@ PHP_FUNCTION(pdf_begin_item)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -1973,7 +1973,7 @@ PHP_FUNCTION(pdf_begin_layer)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2048,7 +2048,7 @@ PHP_FUNCTION(pdf_begin_mc)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2113,7 +2113,7 @@ PHP_FUNCTION(pdf_begin_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2184,7 +2184,7 @@ PHP_FUNCTION(pdf_begin_page_ext)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2257,7 +2257,7 @@ PHP_FUNCTION(pdf_begin_pattern)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2332,7 +2332,7 @@ PHP_FUNCTION(pdf_begin_pattern_ext)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2398,7 +2398,7 @@ PHP_FUNCTION(pdf_begin_template)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2470,7 +2470,7 @@ PHP_FUNCTION(pdf_begin_template_ext)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2535,7 +2535,7 @@ PHP_FUNCTION(pdf_circle)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2601,7 +2601,7 @@ PHP_FUNCTION(pdf_circular_arc)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2663,7 +2663,7 @@ PHP_FUNCTION(pdf_clip)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2724,7 +2724,7 @@ PHP_FUNCTION(pdf_close)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2793,7 +2793,7 @@ PHP_FUNCTION(pdf_close_font)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2862,7 +2862,7 @@ PHP_FUNCTION(pdf_close_graphics)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2930,7 +2930,7 @@ PHP_FUNCTION(pdf_close_image)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -2997,7 +2997,7 @@ PHP_FUNCTION(pdf_close_pdi)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3065,7 +3065,7 @@ PHP_FUNCTION(pdf_close_pdi_document)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3132,7 +3132,7 @@ PHP_FUNCTION(pdf_close_pdi_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3193,7 +3193,7 @@ PHP_FUNCTION(pdf_closepath)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3254,7 +3254,7 @@ PHP_FUNCTION(pdf_closepath_fill_stroke)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3315,7 +3315,7 @@ PHP_FUNCTION(pdf_closepath_stroke)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3382,7 +3382,7 @@ PHP_FUNCTION(pdf_concat)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3451,7 +3451,7 @@ PHP_FUNCTION(pdf_continue_text)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3539,7 +3539,7 @@ PHP_FUNCTION(pdf_convert_to_unicode)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3633,7 +3633,7 @@ PHP_FUNCTION(pdf_create_3dview)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3711,7 +3711,7 @@ PHP_FUNCTION(pdf_create_action)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3792,7 +3792,7 @@ PHP_FUNCTION(pdf_create_annotation)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3864,7 +3864,7 @@ PHP_FUNCTION(pdf_create_devicen)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -3943,7 +3943,7 @@ PHP_FUNCTION(pdf_create_bookmark)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4033,7 +4033,7 @@ PHP_FUNCTION(pdf_create_field)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4113,7 +4113,7 @@ PHP_FUNCTION(pdf_create_fieldgroup)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4185,7 +4185,7 @@ PHP_FUNCTION(pdf_create_gstate)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4269,7 +4269,7 @@ PHP_FUNCTION(pdf_create_pvf)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4350,7 +4350,7 @@ PHP_FUNCTION(pdf_create_textflow)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4420,7 +4420,7 @@ PHP_FUNCTION(pdf_curveto)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4497,7 +4497,7 @@ PHP_FUNCTION(pdf_define_layer)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4568,7 +4568,7 @@ PHP_FUNCTION(pdf_delete_path)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4638,7 +4638,7 @@ PHP_FUNCTION(pdf_delete_pvf)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4713,7 +4713,7 @@ PHP_FUNCTION(pdf_delete_table)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4781,7 +4781,7 @@ PHP_FUNCTION(pdf_delete_textflow)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4858,7 +4858,7 @@ PHP_FUNCTION(pdf_draw_path)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -4926,7 +4926,7 @@ PHP_FUNCTION(pdf_ellipse)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5000,7 +5000,7 @@ PHP_FUNCTION(pdf_elliptical_arc)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5089,7 +5089,7 @@ PHP_FUNCTION(pdf_encoding_set_char)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5159,7 +5159,7 @@ PHP_FUNCTION(pdf_end_document)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5229,7 +5229,7 @@ PHP_FUNCTION(pdf_end_dpart)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5292,7 +5292,7 @@ PHP_FUNCTION(pdf_end_font)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5353,7 +5353,7 @@ PHP_FUNCTION(pdf_end_glyph)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5420,7 +5420,7 @@ PHP_FUNCTION(pdf_end_item)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5481,7 +5481,7 @@ PHP_FUNCTION(pdf_end_layer)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5542,7 +5542,7 @@ PHP_FUNCTION(pdf_end_mc)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5603,7 +5603,7 @@ PHP_FUNCTION(pdf_end_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5672,7 +5672,7 @@ PHP_FUNCTION(pdf_end_page_ext)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5734,7 +5734,7 @@ PHP_FUNCTION(pdf_end_pattern)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5795,7 +5795,7 @@ PHP_FUNCTION(pdf_end_template)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5862,7 +5862,7 @@ PHP_FUNCTION(pdf_end_template_ext)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5924,7 +5924,7 @@ PHP_FUNCTION(pdf_endpath)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -5985,7 +5985,7 @@ PHP_FUNCTION(pdf_fill)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6074,7 +6074,7 @@ PHP_FUNCTION(pdf_fill_graphicsblock)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6165,7 +6165,7 @@ PHP_FUNCTION(pdf_fill_imageblock)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6255,7 +6255,7 @@ PHP_FUNCTION(pdf_fill_pdfblock)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6318,7 +6318,7 @@ PHP_FUNCTION(pdf_fill_stroke)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6408,7 +6408,7 @@ PHP_FUNCTION(pdf_fill_textblock)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6494,7 +6494,7 @@ PHP_FUNCTION(pdf_findfont)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6574,7 +6574,7 @@ PHP_FUNCTION(pdf_fit_graphics)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6652,7 +6652,7 @@ PHP_FUNCTION(pdf_fit_image)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6729,7 +6729,7 @@ PHP_FUNCTION(pdf_fit_pdi_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6809,7 +6809,7 @@ PHP_FUNCTION(pdf_fit_table)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6901,7 +6901,7 @@ PHP_FUNCTION(pdf_fit_textflow)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -6992,7 +6992,7 @@ PHP_FUNCTION(pdf_fit_textline)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7057,7 +7057,7 @@ PHP_FUNCTION(pdf_get_apiname)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7132,7 +7132,7 @@ PHP_FUNCTION(pdf_get_buffer)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7207,7 +7207,7 @@ PHP_FUNCTION(pdf_get_errmsg)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7281,7 +7281,7 @@ PHP_FUNCTION(pdf_get_errnum)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7358,7 +7358,7 @@ PHP_FUNCTION(pdf_get_option)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7431,7 +7431,7 @@ PHP_FUNCTION(pdf_get_parameter)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7534,7 +7534,7 @@ PHP_FUNCTION(pdf_get_pdi_value)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7612,7 +7612,7 @@ PHP_FUNCTION(pdf_get_string)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7696,7 +7696,7 @@ PHP_FUNCTION(pdf_get_value)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7782,7 +7782,7 @@ PHP_FUNCTION(pdf_info_font)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7867,7 +7867,7 @@ PHP_FUNCTION(pdf_info_graphics)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -7953,7 +7953,7 @@ PHP_FUNCTION(pdf_info_image)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8038,7 +8038,7 @@ PHP_FUNCTION(pdf_info_matchbox)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8123,7 +8123,7 @@ PHP_FUNCTION(pdf_info_path)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8209,7 +8209,7 @@ PHP_FUNCTION(pdf_info_pdi_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8289,7 +8289,7 @@ PHP_FUNCTION(pdf_info_pvf)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8367,7 +8367,7 @@ PHP_FUNCTION(pdf_info_table)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8443,7 +8443,7 @@ PHP_FUNCTION(pdf_info_textflow)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8528,7 +8528,7 @@ PHP_FUNCTION(pdf_info_textline)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8593,7 +8593,7 @@ PHP_FUNCTION(pdf_initgraphics)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8659,7 +8659,7 @@ PHP_FUNCTION(pdf_lineto)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8735,7 +8735,7 @@ PHP_FUNCTION(pdf_load_3ddata)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8821,7 +8821,7 @@ PHP_FUNCTION(pdf_load_asset)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8908,7 +8908,7 @@ PHP_FUNCTION(pdf_load_font)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -8995,7 +8995,7 @@ PHP_FUNCTION(pdf_load_graphics)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9075,7 +9075,7 @@ PHP_FUNCTION(pdf_load_iccprofile)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9160,7 +9160,7 @@ PHP_FUNCTION(pdf_load_image)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9232,7 +9232,7 @@ PHP_FUNCTION(pdf_makespotcolor)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9308,7 +9308,7 @@ PHP_FUNCTION(pdf_mc_point)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9373,7 +9373,7 @@ PHP_FUNCTION(pdf_moveto)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9472,7 +9472,7 @@ PHP_FUNCTION(pdf_open_ccitt)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9543,7 +9543,7 @@ PHP_FUNCTION(pdf_open_file)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9640,7 +9640,7 @@ PHP_FUNCTION(pdf_open_image_file)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9720,7 +9720,7 @@ PHP_FUNCTION(pdf_open_pdi_document)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9803,7 +9803,7 @@ PHP_FUNCTION(pdf_open_pdi_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9879,7 +9879,7 @@ PHP_FUNCTION(pdf_pcos_get_number)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -9955,7 +9955,7 @@ PHP_FUNCTION(pdf_pcos_get_string)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10051,7 +10051,7 @@ PHP_FUNCTION(pdf_pcos_get_stream)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10136,7 +10136,7 @@ PHP_FUNCTION(pdf_place_image)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10208,7 +10208,7 @@ PHP_FUNCTION(pdf_place_pdi_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10284,7 +10284,7 @@ PHP_FUNCTION(pdf_poca_delete)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10361,7 +10361,7 @@ PHP_FUNCTION(pdf_poca_insert)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10433,7 +10433,7 @@ PHP_FUNCTION(pdf_poca_new)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10510,7 +10510,7 @@ PHP_FUNCTION(pdf_poca_remove)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10593,7 +10593,7 @@ PHP_FUNCTION(pdf_process_pdi)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10659,7 +10659,7 @@ PHP_FUNCTION(pdf_rect)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10720,7 +10720,7 @@ PHP_FUNCTION(pdf_restore)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10788,7 +10788,7 @@ PHP_FUNCTION(pdf_resume_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10851,7 +10851,7 @@ PHP_FUNCTION(pdf_rotate)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10912,7 +10912,7 @@ PHP_FUNCTION(pdf_save)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -10975,7 +10975,7 @@ PHP_FUNCTION(pdf_scale)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11039,7 +11039,7 @@ PHP_FUNCTION(pdf_set_border_color)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11103,7 +11103,7 @@ PHP_FUNCTION(pdf_set_border_dash)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11173,7 +11173,7 @@ PHP_FUNCTION(pdf_set_border_style)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11244,7 +11244,7 @@ PHP_FUNCTION(pdf_set_graphics_option)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11313,7 +11313,7 @@ PHP_FUNCTION(pdf_set_gstate)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11389,7 +11389,7 @@ PHP_FUNCTION(pdf_set_info)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11467,7 +11467,7 @@ PHP_FUNCTION(pdf_set_layer_dependency)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11538,7 +11538,7 @@ PHP_FUNCTION(pdf_set_option)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11615,7 +11615,7 @@ PHP_FUNCTION(pdf_set_parameter)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11689,7 +11689,7 @@ PHP_FUNCTION(pdf_set_text_option)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11754,7 +11754,7 @@ PHP_FUNCTION(pdf_set_text_pos)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11823,7 +11823,7 @@ PHP_FUNCTION(pdf_set_value)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11906,7 +11906,7 @@ PHP_FUNCTION(pdf_setcolor)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -11971,7 +11971,7 @@ PHP_FUNCTION(pdf_setdash)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12042,7 +12042,7 @@ PHP_FUNCTION(pdf_setdashpattern)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12108,7 +12108,7 @@ PHP_FUNCTION(pdf_setflat)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12179,7 +12179,7 @@ PHP_FUNCTION(pdf_setfont)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12241,7 +12241,7 @@ PHP_FUNCTION(pdf_setgray)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12304,7 +12304,7 @@ PHP_FUNCTION(pdf_setgray_fill)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12367,7 +12367,7 @@ PHP_FUNCTION(pdf_setgray_stroke)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12435,7 +12435,7 @@ PHP_FUNCTION(pdf_setlinecap)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12505,7 +12505,7 @@ PHP_FUNCTION(pdf_setlinejoin)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12570,7 +12570,7 @@ PHP_FUNCTION(pdf_setlinewidth)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12637,7 +12637,7 @@ PHP_FUNCTION(pdf_setmatrix)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12699,7 +12699,7 @@ PHP_FUNCTION(pdf_setmiterlimit)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12766,7 +12766,7 @@ PHP_FUNCTION(pdf_setrgbcolor)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12831,7 +12831,7 @@ PHP_FUNCTION(pdf_setrgbcolor_fill)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12896,7 +12896,7 @@ PHP_FUNCTION(pdf_setrgbcolor_stroke)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -12981,7 +12981,7 @@ PHP_FUNCTION(pdf_shading)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13058,7 +13058,7 @@ PHP_FUNCTION(pdf_shading_pattern)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13126,7 +13126,7 @@ PHP_FUNCTION(pdf_shfill)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13195,7 +13195,7 @@ PHP_FUNCTION(pdf_show)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13268,7 +13268,7 @@ PHP_FUNCTION(pdf_show_xy)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13333,7 +13333,7 @@ PHP_FUNCTION(pdf_skew)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13410,7 +13410,7 @@ PHP_FUNCTION(pdf_stringwidth)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13473,7 +13473,7 @@ PHP_FUNCTION(pdf_stroke)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13541,7 +13541,7 @@ PHP_FUNCTION(pdf_suspend_page)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13605,7 +13605,7 @@ PHP_FUNCTION(pdf_translate)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13676,7 +13676,7 @@ PHP_FUNCTION(pdf_utf16_to_utf8)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13772,7 +13772,7 @@ PHP_FUNCTION(pdf_utf8_to_utf16)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13863,7 +13863,7 @@ PHP_FUNCTION(pdf_utf32_to_utf8)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -13960,7 +13960,7 @@ PHP_FUNCTION(pdf_utf8_to_utf32)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -14058,7 +14058,7 @@ PHP_FUNCTION(pdf_utf16_to_utf32)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -14156,7 +14156,7 @@ PHP_FUNCTION(pdf_utf32_to_utf16)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -14207,791 +14207,3 @@ php_error_docref(NULL TSRMLS_CC, E_DEPRECATED, "Deprecated, use PDF_convert_to_u
 }
 /* }}} */
 #endif /* defined(_WRAP_CODE) */
-#if defined(_WRAP_FUNCTION_ENTRY)
-    PHP_FE(pdf_activate_item, NULL)
-    PHP_FE(pdf_add_bookmark, NULL)
-    PHP_FE(pdf_add_launchlink, NULL)
-    PHP_FE(pdf_add_locallink, NULL)
-    PHP_FE(pdf_add_nameddest, NULL)
-    PHP_FE(pdf_add_note, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_add_path_point, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_add_pdflink, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_add_portfolio_file, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_add_portfolio_folder, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_add_table_cell, NULL)
-    PHP_FE(pdf_add_textflow, NULL)
-    PHP_FE(pdf_add_thumbnail, NULL)
-    PHP_FE(pdf_add_weblink, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_align, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_arc, NULL)
-    PHP_FE(pdf_arcn, NULL)
-    PHP_FE(pdf_attach_file, NULL)
-    PHP_FE(pdf_begin_document, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_begin_dpart, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_begin_font, NULL)
-    PHP_FE(pdf_begin_glyph, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_begin_glyph_ext, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_begin_item, NULL)
-    PHP_FE(pdf_begin_layer, NULL)
-    PHP_FE(pdf_begin_mc, NULL)
-    PHP_FE(pdf_begin_page, NULL)
-    PHP_FE(pdf_begin_page_ext, NULL)
-    PHP_FE(pdf_begin_pattern, NULL)
-#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
-    PHP_FE(pdf_begin_pattern_ext, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2) */
-    PHP_FE(pdf_begin_template, NULL)
-    PHP_FE(pdf_begin_template_ext, NULL)
-    PHP_FE(pdf_circle, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_circular_arc, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_clip, NULL)
-    PHP_FE(pdf_close, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_close_font, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_close_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_close_image, NULL)
-    PHP_FE(pdf_close_pdi, NULL)
-    PHP_FE(pdf_close_pdi_document, NULL)
-    PHP_FE(pdf_close_pdi_page, NULL)
-    PHP_FE(pdf_closepath, NULL)
-    PHP_FE(pdf_closepath_fill_stroke, NULL)
-    PHP_FE(pdf_closepath_stroke, NULL)
-    PHP_FE(pdf_concat, NULL)
-    PHP_FE(pdf_continue_text, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_convert_to_unicode, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_create_3dview, NULL)
-    PHP_FE(pdf_create_action, NULL)
-    PHP_FE(pdf_create_annotation, NULL)
-#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
-    PHP_FE(pdf_create_devicen, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1 */
-    PHP_FE(pdf_create_bookmark, NULL)
-    PHP_FE(pdf_create_field, NULL)
-    PHP_FE(pdf_create_fieldgroup, NULL)
-    PHP_FE(pdf_create_gstate, NULL)
-    PHP_FE(pdf_create_pvf, NULL)
-    PHP_FE(pdf_create_textflow, NULL)
-    PHP_FE(pdf_curveto, NULL)
-    PHP_FE(pdf_define_layer, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_delete_path, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_delete_pvf, NULL)
-    PHP_FE(pdf_delete_table, NULL)
-    PHP_FE(pdf_delete_textflow, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_draw_path, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_ellipse, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_elliptical_arc, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_encoding_set_char, NULL)
-    PHP_FE(pdf_end_document, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_end_dpart, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_end_font, NULL)
-    PHP_FE(pdf_end_glyph, NULL)
-    PHP_FE(pdf_end_item, NULL)
-    PHP_FE(pdf_end_layer, NULL)
-    PHP_FE(pdf_end_mc, NULL)
-    PHP_FE(pdf_end_page, NULL)
-    PHP_FE(pdf_end_page_ext, NULL)
-    PHP_FE(pdf_end_pattern, NULL)
-    PHP_FE(pdf_end_template, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_end_template_ext, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_endpath, NULL)
-    PHP_FE(pdf_fill, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_fill_graphicsblock, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_fill_imageblock, NULL)
-    PHP_FE(pdf_fill_pdfblock, NULL)
-    PHP_FE(pdf_fill_stroke, NULL)
-    PHP_FE(pdf_fill_textblock, NULL)
-    PHP_FE(pdf_findfont, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_fit_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_fit_image, NULL)
-    PHP_FE(pdf_fit_pdi_page, NULL)
-    PHP_FE(pdf_fit_table, NULL)
-    PHP_FE(pdf_fit_textflow, NULL)
-    PHP_FE(pdf_fit_textline, NULL)
-    PHP_FE(pdf_get_apiname, NULL)
-    PHP_FE(pdf_get_buffer, NULL)
-    PHP_FE(pdf_get_errmsg, NULL)
-    PHP_FE(pdf_get_errnum, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_get_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_get_parameter, NULL)
-    PHP_FE(pdf_get_pdi_value, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_get_string, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_get_value, NULL)
-    PHP_FE(pdf_info_font, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_info_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_info_image, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_info_matchbox, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_info_path, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_info_pdi_page, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_info_pvf, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_info_table, NULL)
-    PHP_FE(pdf_info_textflow, NULL)
-    PHP_FE(pdf_info_textline, NULL)
-    PHP_FE(pdf_initgraphics, NULL)
-    PHP_FE(pdf_lineto, NULL)
-    PHP_FE(pdf_load_3ddata, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_load_asset, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_load_font, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_load_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_load_iccprofile, NULL)
-    PHP_FE(pdf_load_image, NULL)
-    PHP_FE(pdf_makespotcolor, NULL)
-    PHP_FE(pdf_mc_point, NULL)
-    PHP_FE(pdf_moveto, NULL)
-    PHP_FE(pdf_open_ccitt, NULL)
-    PHP_FE(pdf_open_file, NULL)
-    PHP_FE(pdf_open_image_file, NULL)
-    PHP_FE(pdf_open_pdi_document, NULL)
-    PHP_FE(pdf_open_pdi_page, NULL)
-    PHP_FE(pdf_pcos_get_number, NULL)
-    PHP_FE(pdf_pcos_get_string, NULL)
-    PHP_FE(pdf_pcos_get_stream, NULL)
-    PHP_FE(pdf_place_image, NULL)
-    PHP_FE(pdf_place_pdi_page, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_poca_delete, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_poca_insert, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_poca_new, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_poca_remove, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_process_pdi, NULL)
-    PHP_FE(pdf_rect, NULL)
-    PHP_FE(pdf_restore, NULL)
-    PHP_FE(pdf_resume_page, NULL)
-    PHP_FE(pdf_rotate, NULL)
-    PHP_FE(pdf_save, NULL)
-    PHP_FE(pdf_scale, NULL)
-    PHP_FE(pdf_set_border_color, NULL)
-    PHP_FE(pdf_set_border_dash, NULL)
-    PHP_FE(pdf_set_border_style, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_set_graphics_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_set_gstate, NULL)
-    PHP_FE(pdf_set_info, NULL)
-    PHP_FE(pdf_set_layer_dependency, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_set_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_set_parameter, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PHP_FE(pdf_set_text_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PHP_FE(pdf_set_text_pos, NULL)
-    PHP_FE(pdf_set_value, NULL)
-    PHP_FE(pdf_setcolor, NULL)
-    PHP_FE(pdf_setdash, NULL)
-    PHP_FE(pdf_setdashpattern, NULL)
-    PHP_FE(pdf_setflat, NULL)
-    PHP_FE(pdf_setfont, NULL)
-    PHP_FE(pdf_setgray, NULL)
-    PHP_FE(pdf_setgray_fill, NULL)
-    PHP_FE(pdf_setgray_stroke, NULL)
-    PHP_FE(pdf_setlinecap, NULL)
-    PHP_FE(pdf_setlinejoin, NULL)
-    PHP_FE(pdf_setlinewidth, NULL)
-    PHP_FE(pdf_setmatrix, NULL)
-    PHP_FE(pdf_setmiterlimit, NULL)
-    PHP_FE(pdf_setrgbcolor, NULL)
-    PHP_FE(pdf_setrgbcolor_fill, NULL)
-    PHP_FE(pdf_setrgbcolor_stroke, NULL)
-    PHP_FE(pdf_shading, NULL)
-    PHP_FE(pdf_shading_pattern, NULL)
-    PHP_FE(pdf_shfill, NULL)
-    PHP_FE(pdf_show, NULL)
-    PHP_FE(pdf_show_xy, NULL)
-    PHP_FE(pdf_skew, NULL)
-    PHP_FE(pdf_stringwidth, NULL)
-    PHP_FE(pdf_stroke, NULL)
-    PHP_FE(pdf_suspend_page, NULL)
-    PHP_FE(pdf_translate, NULL)
-    PHP_FE(pdf_utf16_to_utf8, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_utf8_to_utf16, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_utf32_to_utf8, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_utf8_to_utf32, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PHP_FE(pdf_utf16_to_utf32, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PHP_FE(pdf_utf32_to_utf16, NULL)
-#endif /* defined(_WRAP_FUNCTION_ENTRY)*/
-#if defined(_WRAP_FUNCTION_ENTRY2)
-    PDF_ME_MAPPING(activate_item, pdf_activate_item, NULL)
-    PDF_ME_MAPPING(add_nameddest, pdf_add_nameddest, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(add_path_point, pdf_add_path_point, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(add_portfolio_file, pdf_add_portfolio_file, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(add_portfolio_folder, pdf_add_portfolio_folder, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(add_table_cell, pdf_add_table_cell, NULL)
-    PDF_ME_MAPPING(add_textflow, pdf_add_textflow, NULL)
-    PDF_ME_MAPPING(add_thumbnail, pdf_add_thumbnail, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(align, pdf_align, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(arc, pdf_arc, NULL)
-    PDF_ME_MAPPING(arcn, pdf_arcn, NULL)
-    PDF_ME_MAPPING(begin_document, pdf_begin_document, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(begin_dpart, pdf_begin_dpart, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(begin_font, pdf_begin_font, NULL)
-    PDF_ME_MAPPING(begin_glyph, pdf_begin_glyph, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(begin_glyph_ext, pdf_begin_glyph_ext, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(begin_item, pdf_begin_item, NULL)
-    PDF_ME_MAPPING(begin_layer, pdf_begin_layer, NULL)
-    PDF_ME_MAPPING(begin_mc, pdf_begin_mc, NULL)
-    PDF_ME_MAPPING(begin_page_ext, pdf_begin_page_ext, NULL)
-    PDF_ME_MAPPING(begin_pattern, pdf_begin_pattern, NULL)
-#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
-    PDF_ME_MAPPING(begin_pattern_ext, pdf_begin_pattern_ext, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2) */
-    PDF_ME_MAPPING(begin_template, pdf_begin_template, NULL)
-    PDF_ME_MAPPING(begin_template_ext, pdf_begin_template_ext, NULL)
-    PDF_ME_MAPPING(circle, pdf_circle, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(circular_arc, pdf_circular_arc, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(clip, pdf_clip, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(close_font, pdf_close_font, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(close_graphics, pdf_close_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(close_image, pdf_close_image, NULL)
-    PDF_ME_MAPPING(close_pdi, pdf_close_pdi, NULL)
-    PDF_ME_MAPPING(close_pdi_document, pdf_close_pdi_document, NULL)
-    PDF_ME_MAPPING(close_pdi_page, pdf_close_pdi_page, NULL)
-    PDF_ME_MAPPING(closepath, pdf_closepath, NULL)
-    PDF_ME_MAPPING(closepath_fill_stroke, pdf_closepath_fill_stroke, NULL)
-    PDF_ME_MAPPING(closepath_stroke, pdf_closepath_stroke, NULL)
-    PDF_ME_MAPPING(concat, pdf_concat, NULL)
-    PDF_ME_MAPPING(continue_text, pdf_continue_text, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(convert_to_unicode, pdf_convert_to_unicode, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(create_3dview, pdf_create_3dview, NULL)
-    PDF_ME_MAPPING(create_action, pdf_create_action, NULL)
-    PDF_ME_MAPPING(create_annotation, pdf_create_annotation, NULL)
-#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
-    PDF_ME_MAPPING(create_devicen, pdf_create_devicen, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1 */
-    PDF_ME_MAPPING(create_bookmark, pdf_create_bookmark, NULL)
-    PDF_ME_MAPPING(create_field, pdf_create_field, NULL)
-    PDF_ME_MAPPING(create_fieldgroup, pdf_create_fieldgroup, NULL)
-    PDF_ME_MAPPING(create_gstate, pdf_create_gstate, NULL)
-    PDF_ME_MAPPING(create_pvf, pdf_create_pvf, NULL)
-    PDF_ME_MAPPING(create_textflow, pdf_create_textflow, NULL)
-    PDF_ME_MAPPING(curveto, pdf_curveto, NULL)
-    PDF_ME_MAPPING(define_layer, pdf_define_layer, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(delete_path, pdf_delete_path, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(delete_pvf, pdf_delete_pvf, NULL)
-    PDF_ME_MAPPING(delete_table, pdf_delete_table, NULL)
-    PDF_ME_MAPPING(delete_textflow, pdf_delete_textflow, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(draw_path, pdf_draw_path, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(ellipse, pdf_ellipse, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(elliptical_arc, pdf_elliptical_arc, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(encoding_set_char, pdf_encoding_set_char, NULL)
-    PDF_ME_MAPPING(end_document, pdf_end_document, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(end_dpart, pdf_end_dpart, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(end_font, pdf_end_font, NULL)
-    PDF_ME_MAPPING(end_glyph, pdf_end_glyph, NULL)
-    PDF_ME_MAPPING(end_item, pdf_end_item, NULL)
-    PDF_ME_MAPPING(end_layer, pdf_end_layer, NULL)
-    PDF_ME_MAPPING(end_mc, pdf_end_mc, NULL)
-    PDF_ME_MAPPING(end_page_ext, pdf_end_page_ext, NULL)
-    PDF_ME_MAPPING(end_pattern, pdf_end_pattern, NULL)
-    PDF_ME_MAPPING(end_template, pdf_end_template, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(end_template_ext, pdf_end_template_ext, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(endpath, pdf_endpath, NULL)
-    PDF_ME_MAPPING(fill, pdf_fill, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(fill_graphicsblock, pdf_fill_graphicsblock, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(fill_imageblock, pdf_fill_imageblock, NULL)
-    PDF_ME_MAPPING(fill_pdfblock, pdf_fill_pdfblock, NULL)
-    PDF_ME_MAPPING(fill_stroke, pdf_fill_stroke, NULL)
-    PDF_ME_MAPPING(fill_textblock, pdf_fill_textblock, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(fit_graphics, pdf_fit_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(fit_image, pdf_fit_image, NULL)
-    PDF_ME_MAPPING(fit_pdi_page, pdf_fit_pdi_page, NULL)
-    PDF_ME_MAPPING(fit_table, pdf_fit_table, NULL)
-    PDF_ME_MAPPING(fit_textflow, pdf_fit_textflow, NULL)
-    PDF_ME_MAPPING(fit_textline, pdf_fit_textline, NULL)
-    PDF_ME_MAPPING(get_apiname, pdf_get_apiname, NULL)
-    PDF_ME_MAPPING(get_buffer, pdf_get_buffer, NULL)
-    PDF_ME_MAPPING(get_errmsg, pdf_get_errmsg, NULL)
-    PDF_ME_MAPPING(get_errnum, pdf_get_errnum, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(get_option, pdf_get_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(get_parameter, pdf_get_parameter, NULL)
-    PDF_ME_MAPPING(get_pdi_value, pdf_get_pdi_value, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(get_string, pdf_get_string, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(get_value, pdf_get_value, NULL)
-    PDF_ME_MAPPING(info_font, pdf_info_font, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(info_graphics, pdf_info_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(info_image, pdf_info_image, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(info_matchbox, pdf_info_matchbox, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(info_path, pdf_info_path, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(info_pdi_page, pdf_info_pdi_page, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(info_pvf, pdf_info_pvf, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(info_table, pdf_info_table, NULL)
-    PDF_ME_MAPPING(info_textflow, pdf_info_textflow, NULL)
-    PDF_ME_MAPPING(info_textline, pdf_info_textline, NULL)
-    PDF_ME_MAPPING(initgraphics, pdf_initgraphics, NULL)
-    PDF_ME_MAPPING(lineto, pdf_lineto, NULL)
-    PDF_ME_MAPPING(load_3ddata, pdf_load_3ddata, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(load_asset, pdf_load_asset, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(load_font, pdf_load_font, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(load_graphics, pdf_load_graphics, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(load_iccprofile, pdf_load_iccprofile, NULL)
-    PDF_ME_MAPPING(load_image, pdf_load_image, NULL)
-    PDF_ME_MAPPING(makespotcolor, pdf_makespotcolor, NULL)
-    PDF_ME_MAPPING(mc_point, pdf_mc_point, NULL)
-    PDF_ME_MAPPING(moveto, pdf_moveto, NULL)
-    PDF_ME_MAPPING(open_pdi_document, pdf_open_pdi_document, NULL)
-    PDF_ME_MAPPING(open_pdi_page, pdf_open_pdi_page, NULL)
-    PDF_ME_MAPPING(pcos_get_number, pdf_pcos_get_number, NULL)
-    PDF_ME_MAPPING(pcos_get_string, pdf_pcos_get_string, NULL)
-    PDF_ME_MAPPING(pcos_get_stream, pdf_pcos_get_stream, NULL)
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(poca_delete, pdf_poca_delete, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(poca_insert, pdf_poca_insert, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(poca_new, pdf_poca_new, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(poca_remove, pdf_poca_remove, NULL)
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(process_pdi, pdf_process_pdi, NULL)
-    PDF_ME_MAPPING(rect, pdf_rect, NULL)
-    PDF_ME_MAPPING(restore, pdf_restore, NULL)
-    PDF_ME_MAPPING(resume_page, pdf_resume_page, NULL)
-    PDF_ME_MAPPING(rotate, pdf_rotate, NULL)
-    PDF_ME_MAPPING(save, pdf_save, NULL)
-    PDF_ME_MAPPING(scale, pdf_scale, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(set_graphics_option, pdf_set_graphics_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(set_gstate, pdf_set_gstate, NULL)
-    PDF_ME_MAPPING(set_info, pdf_set_info, NULL)
-    PDF_ME_MAPPING(set_layer_dependency, pdf_set_layer_dependency, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(set_option, pdf_set_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(set_parameter, pdf_set_parameter, NULL)
-#if PDFLIB_MAJORVERSION >= 9
-    PDF_ME_MAPPING(set_text_option, pdf_set_text_option, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-    PDF_ME_MAPPING(set_text_pos, pdf_set_text_pos, NULL)
-    PDF_ME_MAPPING(set_value, pdf_set_value, NULL)
-    PDF_ME_MAPPING(setcolor, pdf_setcolor, NULL)
-    PDF_ME_MAPPING(setdash, pdf_setdash, NULL)
-    PDF_ME_MAPPING(setdashpattern, pdf_setdashpattern, NULL)
-    PDF_ME_MAPPING(setflat, pdf_setflat, NULL)
-    PDF_ME_MAPPING(setfont, pdf_setfont, NULL)
-    PDF_ME_MAPPING(setlinecap, pdf_setlinecap, NULL)
-    PDF_ME_MAPPING(setlinejoin, pdf_setlinejoin, NULL)
-    PDF_ME_MAPPING(setlinewidth, pdf_setlinewidth, NULL)
-    PDF_ME_MAPPING(setmatrix, pdf_setmatrix, NULL)
-    PDF_ME_MAPPING(setmiterlimit, pdf_setmiterlimit, NULL)
-    PDF_ME_MAPPING(shading, pdf_shading, NULL)
-    PDF_ME_MAPPING(shading_pattern, pdf_shading_pattern, NULL)
-    PDF_ME_MAPPING(shfill, pdf_shfill, NULL)
-    PDF_ME_MAPPING(show, pdf_show, NULL)
-    PDF_ME_MAPPING(show_xy, pdf_show_xy, NULL)
-    PDF_ME_MAPPING(skew, pdf_skew, NULL)
-    PDF_ME_MAPPING(stringwidth, pdf_stringwidth, NULL)
-    PDF_ME_MAPPING(stroke, pdf_stroke, NULL)
-    PDF_ME_MAPPING(suspend_page, pdf_suspend_page, NULL)
-    PDF_ME_MAPPING(translate, pdf_translate, NULL)
-    PDF_ME_MAPPING(utf16_to_utf8, pdf_utf16_to_utf8, NULL)
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(utf8_to_utf16, pdf_utf8_to_utf16, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(utf32_to_utf8, pdf_utf32_to_utf8, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(utf8_to_utf32, pdf_utf8_to_utf32, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-    PDF_ME_MAPPING(utf16_to_utf32, pdf_utf16_to_utf32, NULL)
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-    PDF_ME_MAPPING(utf32_to_utf16, pdf_utf32_to_utf16, NULL)
-#endif /* defined(_WRAP_FUNCTION_ENTRY2)*/
-#if defined(_WRAP_FUNCTION_ENTRY3)
-PHP_FUNCTION(pdf_activate_item);
-PHP_FUNCTION(pdf_add_bookmark);
-PHP_FUNCTION(pdf_add_launchlink);
-PHP_FUNCTION(pdf_add_locallink);
-PHP_FUNCTION(pdf_add_nameddest);
-PHP_FUNCTION(pdf_add_note);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_add_path_point);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_add_pdflink);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_add_portfolio_file);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_add_portfolio_folder);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_add_table_cell);
-PHP_FUNCTION(pdf_add_textflow);
-PHP_FUNCTION(pdf_add_thumbnail);
-PHP_FUNCTION(pdf_add_weblink);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_align);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_arc);
-PHP_FUNCTION(pdf_arcn);
-PHP_FUNCTION(pdf_attach_file);
-PHP_FUNCTION(pdf_begin_document);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_begin_dpart);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_begin_font);
-PHP_FUNCTION(pdf_begin_glyph);
-#if PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_begin_glyph_ext);
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_begin_item);
-PHP_FUNCTION(pdf_begin_layer);
-PHP_FUNCTION(pdf_begin_mc);
-PHP_FUNCTION(pdf_begin_page);
-PHP_FUNCTION(pdf_begin_page_ext);
-PHP_FUNCTION(pdf_begin_pattern);
-#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
-PHP_FUNCTION(pdf_begin_pattern_ext);
-#endif /* PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2) */
-PHP_FUNCTION(pdf_begin_template);
-PHP_FUNCTION(pdf_begin_template_ext);
-PHP_FUNCTION(pdf_circle);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_circular_arc);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_clip);
-PHP_FUNCTION(pdf_close);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_close_font);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_close_graphics);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_close_image);
-PHP_FUNCTION(pdf_close_pdi);
-PHP_FUNCTION(pdf_close_pdi_document);
-PHP_FUNCTION(pdf_close_pdi_page);
-PHP_FUNCTION(pdf_closepath);
-PHP_FUNCTION(pdf_closepath_fill_stroke);
-PHP_FUNCTION(pdf_closepath_stroke);
-PHP_FUNCTION(pdf_concat);
-PHP_FUNCTION(pdf_continue_text);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_convert_to_unicode);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_create_3dview);
-PHP_FUNCTION(pdf_create_action);
-PHP_FUNCTION(pdf_create_annotation);
-#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
-PHP_FUNCTION(pdf_create_devicen);
-#endif /* PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1 */
-PHP_FUNCTION(pdf_create_bookmark);
-PHP_FUNCTION(pdf_create_field);
-PHP_FUNCTION(pdf_create_fieldgroup);
-PHP_FUNCTION(pdf_create_gstate);
-PHP_FUNCTION(pdf_create_pvf);
-PHP_FUNCTION(pdf_create_textflow);
-PHP_FUNCTION(pdf_curveto);
-PHP_FUNCTION(pdf_define_layer);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_delete_path);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_delete_pvf);
-PHP_FUNCTION(pdf_delete_table);
-PHP_FUNCTION(pdf_delete_textflow);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_draw_path);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_ellipse);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_elliptical_arc);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_encoding_set_char);
-PHP_FUNCTION(pdf_end_document);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_end_dpart);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_end_font);
-PHP_FUNCTION(pdf_end_glyph);
-PHP_FUNCTION(pdf_end_item);
-PHP_FUNCTION(pdf_end_layer);
-PHP_FUNCTION(pdf_end_mc);
-PHP_FUNCTION(pdf_end_page);
-PHP_FUNCTION(pdf_end_page_ext);
-PHP_FUNCTION(pdf_end_pattern);
-PHP_FUNCTION(pdf_end_template);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_end_template_ext);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_endpath);
-PHP_FUNCTION(pdf_fill);
-#if PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_fill_graphicsblock);
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_fill_imageblock);
-PHP_FUNCTION(pdf_fill_pdfblock);
-PHP_FUNCTION(pdf_fill_stroke);
-PHP_FUNCTION(pdf_fill_textblock);
-PHP_FUNCTION(pdf_findfont);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_fit_graphics);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_fit_image);
-PHP_FUNCTION(pdf_fit_pdi_page);
-PHP_FUNCTION(pdf_fit_table);
-PHP_FUNCTION(pdf_fit_textflow);
-PHP_FUNCTION(pdf_fit_textline);
-PHP_FUNCTION(pdf_get_apiname);
-PHP_FUNCTION(pdf_get_buffer);
-PHP_FUNCTION(pdf_get_errmsg);
-PHP_FUNCTION(pdf_get_errnum);
-#if PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_get_option);
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_get_parameter);
-PHP_FUNCTION(pdf_get_pdi_value);
-#if PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_get_string);
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_get_value);
-PHP_FUNCTION(pdf_info_font);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_info_graphics);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_info_image);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_info_matchbox);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_info_path);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_info_pdi_page);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_info_pvf);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_info_table);
-PHP_FUNCTION(pdf_info_textflow);
-PHP_FUNCTION(pdf_info_textline);
-PHP_FUNCTION(pdf_initgraphics);
-PHP_FUNCTION(pdf_lineto);
-PHP_FUNCTION(pdf_load_3ddata);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_load_asset);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_load_font);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_load_graphics);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_load_iccprofile);
-PHP_FUNCTION(pdf_load_image);
-PHP_FUNCTION(pdf_makespotcolor);
-PHP_FUNCTION(pdf_mc_point);
-PHP_FUNCTION(pdf_moveto);
-PHP_FUNCTION(pdf_open_ccitt);
-PHP_FUNCTION(pdf_open_file);
-PHP_FUNCTION(pdf_open_image_file);
-PHP_FUNCTION(pdf_open_pdi_document);
-PHP_FUNCTION(pdf_open_pdi_page);
-PHP_FUNCTION(pdf_pcos_get_number);
-PHP_FUNCTION(pdf_pcos_get_string);
-PHP_FUNCTION(pdf_pcos_get_stream);
-PHP_FUNCTION(pdf_place_image);
-PHP_FUNCTION(pdf_place_pdi_page);
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_poca_delete);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_poca_insert);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_poca_new);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_poca_remove);
-#endif /* (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_process_pdi);
-PHP_FUNCTION(pdf_rect);
-PHP_FUNCTION(pdf_restore);
-PHP_FUNCTION(pdf_resume_page);
-PHP_FUNCTION(pdf_rotate);
-PHP_FUNCTION(pdf_save);
-PHP_FUNCTION(pdf_scale);
-PHP_FUNCTION(pdf_set_border_color);
-PHP_FUNCTION(pdf_set_border_dash);
-PHP_FUNCTION(pdf_set_border_style);
-#if PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_set_graphics_option);
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_set_gstate);
-PHP_FUNCTION(pdf_set_info);
-PHP_FUNCTION(pdf_set_layer_dependency);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_set_option);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_set_parameter);
-#if PDFLIB_MAJORVERSION >= 9
-PHP_FUNCTION(pdf_set_text_option);
-#endif /* PDFLIB_MAJORVERSION >= 9 */
-PHP_FUNCTION(pdf_set_text_pos);
-PHP_FUNCTION(pdf_set_value);
-PHP_FUNCTION(pdf_setcolor);
-PHP_FUNCTION(pdf_setdash);
-PHP_FUNCTION(pdf_setdashpattern);
-PHP_FUNCTION(pdf_setflat);
-PHP_FUNCTION(pdf_setfont);
-PHP_FUNCTION(pdf_setgray);
-PHP_FUNCTION(pdf_setgray_fill);
-PHP_FUNCTION(pdf_setgray_stroke);
-PHP_FUNCTION(pdf_setlinecap);
-PHP_FUNCTION(pdf_setlinejoin);
-PHP_FUNCTION(pdf_setlinewidth);
-PHP_FUNCTION(pdf_setmatrix);
-PHP_FUNCTION(pdf_setmiterlimit);
-PHP_FUNCTION(pdf_setrgbcolor);
-PHP_FUNCTION(pdf_setrgbcolor_fill);
-PHP_FUNCTION(pdf_setrgbcolor_stroke);
-PHP_FUNCTION(pdf_shading);
-PHP_FUNCTION(pdf_shading_pattern);
-PHP_FUNCTION(pdf_shfill);
-PHP_FUNCTION(pdf_show);
-PHP_FUNCTION(pdf_show_xy);
-PHP_FUNCTION(pdf_skew);
-PHP_FUNCTION(pdf_stringwidth);
-PHP_FUNCTION(pdf_stroke);
-PHP_FUNCTION(pdf_suspend_page);
-PHP_FUNCTION(pdf_translate);
-PHP_FUNCTION(pdf_utf16_to_utf8);
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_utf8_to_utf16);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_utf32_to_utf8);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_utf8_to_utf32);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-#if PDFLIB_MAJORVERSION >= 8
-PHP_FUNCTION(pdf_utf16_to_utf32);
-#endif /* PDFLIB_MAJORVERSION >= 8 */
-PHP_FUNCTION(pdf_utf32_to_utf16);
-#endif /* defined(_WRAP_FUNCTION_ENTRY3)*/
