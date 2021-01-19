@@ -1,0 +1,2909 @@
+/* This is a generated file, edit the .stub.php file instead.
+ * Stub hash: 06bab9821dd2546e719dca5ed28cf88c9059cddc */
+
+ZEND_BEGIN_ARG_INFO_EX(arginfo_pdf_new, 0, 0, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_delete, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_pdi_parameter, 0, 5, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, reserved, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_open_image, 0, 10, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, imagetype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, source, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, data, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, length, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, components, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, bpc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, params, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_open_pdi, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, reserved, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setpolydash, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, darray, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_show_boxed, 0, 8, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, left, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, top, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, hmode, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, feature, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_activate_item, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, id, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_bookmark, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, parent, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, open, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_launchlink, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_locallink, 0, 7, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_nameddest, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, name, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_note, 0, 9, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, contents, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, title, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, icon, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, open, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_path_point, 0, 6, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_pdflink, 0, 8, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_portfolio_file, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, folder, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_portfolio_folder, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, parent, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, foldername, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_table_cell, 0, 6, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, column, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, row, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_textflow, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_thumbnail, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_add_weblink, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, url, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_align, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, dx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, dy, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_arc, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, r, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, alpha, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, beta, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_arcn arginfo_pdf_arc
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_attach_file, 0, 10, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, description, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, author, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, mimetype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, icon, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_document, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_dpart, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_font, 0, 9, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, fontname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, a, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, b, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, d, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, e, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, f, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_glyph, 0, 7, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, glyphname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, wx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_glyph_ext, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, uv, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_item, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, tagname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_layer, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, layer, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_mc, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, tagname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_page, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_page_ext, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_pattern, 0, 6, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, xstep, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ystep, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, painttype, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_pattern_ext, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_template, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_begin_template_ext, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_circle, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, r, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_circular_arc, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y2, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_pdf_clip arginfo_pdf_delete
+
+#define arginfo_pdf_close arginfo_pdf_delete
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_close_font, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_close_graphics, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_pdf_close_image arginfo_pdf_add_thumbnail
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_close_pdi, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_close_pdi_document arginfo_pdf_close_pdi
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_close_pdi_page, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_closepath arginfo_pdf_delete
+
+#define arginfo_pdf_closepath_fill_stroke arginfo_pdf_delete
+
+#define arginfo_pdf_closepath_stroke arginfo_pdf_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_concat, 0, 7, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, a, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, b, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, d, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, e, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, f, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_continue_text, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_convert_to_unicode, 0, 4, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, inputformat, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, inputstring, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_3dview, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, username, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_action, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_annotation, 0, 7, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_devicen, 0, 2, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_bookmark, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_field, 0, 8, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, name, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_create_fieldgroup arginfo_pdf_add_nameddest
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_gstate, 0, 2, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_create_pvf, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, data, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_create_textflow arginfo_pdf_create_bookmark
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_curveto, 0, 7, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y3, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_define_layer, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, name, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_delete_path, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_delete_pvf, 0, 2, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_delete_table, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_delete_textflow, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_draw_path, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_ellipse, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, rx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ry, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_elliptical_arc, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, rx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ry, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_encoding_set_char, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, encoding, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, slot, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, glyphname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, uv, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_end_document, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_pdf_end_dpart arginfo_pdf_begin_dpart
+#endif
+
+#define arginfo_pdf_end_font arginfo_pdf_delete
+
+#define arginfo_pdf_end_glyph arginfo_pdf_delete
+
+#define arginfo_pdf_end_item arginfo_pdf_activate_item
+
+#define arginfo_pdf_end_layer arginfo_pdf_delete
+
+#define arginfo_pdf_end_mc arginfo_pdf_delete
+
+#define arginfo_pdf_end_page arginfo_pdf_delete
+
+#define arginfo_pdf_end_page_ext arginfo_pdf_end_document
+
+#define arginfo_pdf_end_pattern arginfo_pdf_delete
+
+#define arginfo_pdf_end_template arginfo_pdf_delete
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_end_template_ext, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_pdf_endpath arginfo_pdf_delete
+
+#define arginfo_pdf_fill arginfo_pdf_delete
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fill_graphicsblock, 0, 5, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fill_imageblock, 0, 5, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fill_pdfblock, 0, 5, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, contents, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_fill_stroke arginfo_pdf_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fill_textblock, 0, 5, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_findfont, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, fontname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, encoding, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, embed, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fit_graphics, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fit_image, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fit_pdi_page, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fit_table, 0, 7, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fit_textflow, 0, 7, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_fit_textline, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_apiname, 0, 1, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_get_buffer arginfo_pdf_get_apiname
+
+#define arginfo_pdf_get_errmsg arginfo_pdf_get_apiname
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_errnum, 0, 1, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_option, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_parameter, 0, 3, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, modifier, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_pdi_value, 0, 5, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, reserved, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_string, 0, 3, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, idx, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_get_value, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, modifier, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_font, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_graphics, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_image, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_matchbox, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, boxname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, num, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_path, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_pdi_page, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_pvf, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_table, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_textflow, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_info_textline, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_initgraphics arginfo_pdf_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_lineto, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_load_3ddata arginfo_pdf_begin_document
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_load_asset, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_load_font, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, fontname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, encoding, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_pdf_load_graphics arginfo_pdf_load_asset
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_load_iccprofile, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, profilename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_load_image, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, imagetype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_makespotcolor, 0, 2, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, spotname, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_mc_point arginfo_pdf_begin_mc
+
+#define arginfo_pdf_moveto arginfo_pdf_lineto
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_open_ccitt, 0, 7, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, BitReverse, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, K, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, BlackIs1, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_open_file arginfo_pdf_delete_pvf
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_open_image_file, 0, 5, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, imagetype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, stringparam, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, intparam, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_open_pdi_document arginfo_pdf_begin_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_open_pdi_page, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, pagenumber, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_pcos_get_number, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_pcos_get_string, 0, 3, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_pcos_get_stream, 0, 4, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_place_image, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, scale, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_place_pdi_page, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, sx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, sy, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_poca_delete, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, container, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_pdf_poca_insert arginfo_pdf_poca_delete
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_poca_new, 0, 2, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_pdf_poca_remove arginfo_pdf_poca_delete
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_process_pdi, 0, 4, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_rect, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_restore arginfo_pdf_delete
+
+#define arginfo_pdf_resume_page arginfo_pdf_end_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_rotate, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, phi, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_save arginfo_pdf_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_scale, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, sx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, sy, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_border_color, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, red, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, green, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, blue, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_border_dash, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, b, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, w, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_border_style, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, style, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_graphics_option, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_gstate, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, gstate, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_info, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, value, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_layer_dependency, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_option, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_pdf_set_parameter arginfo_pdf_set_info
+
+#if PDFLIB_MAJORVERSION >= 9
+#define arginfo_pdf_set_text_option arginfo_pdf_set_graphics_option
+#endif
+
+#define arginfo_pdf_set_text_pos arginfo_pdf_lineto
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_set_value, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, value, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setcolor, 0, 7, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, fstype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, colorspace, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, c1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c4, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_setdash arginfo_pdf_set_border_dash
+
+#define arginfo_pdf_setdashpattern arginfo_pdf_end_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setflat, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, flatness, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setfont, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, fontsize, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setgray, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, gray, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_setgray_fill arginfo_pdf_setgray
+
+#define arginfo_pdf_setgray_stroke arginfo_pdf_setgray
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setlinecap, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, linecap, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setlinejoin, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, linejoin, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setlinewidth, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_setmatrix arginfo_pdf_concat
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_setmiterlimit, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, miter, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_setrgbcolor arginfo_pdf_set_border_color
+
+#define arginfo_pdf_setrgbcolor_fill arginfo_pdf_set_border_color
+
+#define arginfo_pdf_setrgbcolor_stroke arginfo_pdf_set_border_color
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_shading, 0, 11, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, x0, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y0, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c4, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_shading_pattern, 0, 3, IS_LONG, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, shading, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_shfill, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, shading, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_show arginfo_pdf_continue_text
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_show_xy, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_skew, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, alpha, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, beta, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_stringwidth, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, fontsize, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_pdf_stroke arginfo_pdf_delete
+
+#define arginfo_pdf_suspend_page arginfo_pdf_end_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_translate, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, tx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ty, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_utf16_to_utf8, 0, 2, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, utf16string, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_utf8_to_utf16, 0, 3, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, utf8string, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, ordering, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_utf32_to_utf8, 0, 2, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, utf32string, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+#define arginfo_pdf_utf8_to_utf32 arginfo_pdf_utf8_to_utf16
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_utf16_to_utf32, 0, 3, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, utf16string, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, ordering, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_pdf_utf32_to_utf16, 0, 3, IS_STRING, 0)
+	ZEND_ARG_INFO(0, pdf)
+	ZEND_ARG_TYPE_INFO(0, utf32string, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, ordering, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib___construct arginfo_pdf_new
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_delete, 0, 0, _IS_BOOL, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_pdi_parameter, 0, 4, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, reserved, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_open_pdi, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, reserved, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_open_image, 0, 9, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, imagetype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, source, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, data, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, length, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, components, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, bpc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, params, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setpolydash, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, darray, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_show_boxed, 0, 7, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, left, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, top, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, hmode, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, feature, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_activate_item, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, id, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_add_nameddest, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, name, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_add_path_point, 0, 5, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_add_portfolio_file, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, folder, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_add_portfolio_folder, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, parent, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, foldername, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_add_table_cell, 0, 5, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, column, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, row, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_add_textflow, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_add_thumbnail, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_align, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, dx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, dy, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_arc, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, r, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, alpha, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, beta, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_arcn arginfo_class_PDFlib_arc
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_document, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_dpart, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_font, 0, 8, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, fontname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, a, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, b, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, d, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, e, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, f, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_glyph, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, glyphname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, wx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_glyph_ext, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, uv, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_item, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, tagname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_layer, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, layer, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_mc, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, tagname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_page_ext, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_pattern, 0, 5, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, xstep, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ystep, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, painttype, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_pattern_ext, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_template, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_begin_template_ext, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_circle, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, r, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_circular_arc, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y2, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_class_PDFlib_clip arginfo_class_PDFlib_delete
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_close_font, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_close_graphics, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_class_PDFlib_close_image arginfo_class_PDFlib_add_thumbnail
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_close_pdi, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_close_pdi_document arginfo_class_PDFlib_close_pdi
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_close_pdi_page, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_closepath arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_closepath_fill_stroke arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_closepath_stroke arginfo_class_PDFlib_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_concat, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, a, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, b, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, d, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, e, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, f, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_continue_text, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_convert_to_unicode, 0, 3, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, inputformat, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, inputstring, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_3dview, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, username, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_action, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_annotation, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_devicen, 0, 1, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_bookmark, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_field, 0, 7, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, name, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_create_fieldgroup arginfo_class_PDFlib_add_nameddest
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_gstate, 0, 1, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_create_pvf, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, data, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_create_textflow arginfo_class_PDFlib_create_bookmark
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_curveto, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y3, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_define_layer, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, name, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_delete_path, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_delete_pvf, 0, 1, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_delete_table, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_delete_textflow, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_draw_path, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_ellipse, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, rx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ry, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_elliptical_arc, 0, 5, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, rx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ry, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_encoding_set_char, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, encoding, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, slot, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, glyphname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, uv, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_end_document, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_class_PDFlib_end_dpart arginfo_class_PDFlib_begin_dpart
+#endif
+
+#define arginfo_class_PDFlib_end_font arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_end_glyph arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_end_item arginfo_class_PDFlib_activate_item
+
+#define arginfo_class_PDFlib_end_layer arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_end_mc arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_end_page_ext arginfo_class_PDFlib_end_document
+
+#define arginfo_class_PDFlib_end_pattern arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_end_template arginfo_class_PDFlib_delete
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_end_template_ext, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_class_PDFlib_endpath arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_fill arginfo_class_PDFlib_delete
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fill_graphicsblock, 0, 4, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fill_imageblock, 0, 4, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fill_pdfblock, 0, 4, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, contents, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_fill_stroke arginfo_class_PDFlib_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fill_textblock, 0, 4, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, blockname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fit_graphics, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fit_image, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fit_pdi_page, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fit_table, 0, 6, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fit_textflow, 0, 6, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, llx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, lly, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, urx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ury, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_fit_textline, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_apiname, 0, 0, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_get_buffer arginfo_class_PDFlib_get_apiname
+
+#define arginfo_class_PDFlib_get_errmsg arginfo_class_PDFlib_get_apiname
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_errnum, 0, 0, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_option, 0, 2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_parameter, 0, 2, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, modifier, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_pdi_value, 0, 4, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, reserved, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_string, 0, 2, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, idx, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_get_value, 0, 2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, modifier, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_font, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_graphics, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, graphics, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_image, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, image, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_matchbox, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, boxname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, num, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_path, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_pdi_page, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_pvf, 0, 2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_table, 0, 2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, table, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_textflow, 0, 2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, textflow, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_info_textline, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, keyword, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_initgraphics arginfo_class_PDFlib_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_lineto, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_load_3ddata arginfo_class_PDFlib_begin_document
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_load_asset, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_load_font, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, fontname, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, encoding, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_class_PDFlib_load_graphics arginfo_class_PDFlib_load_asset
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_load_iccprofile, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, profilename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_load_image, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, imagetype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, filename, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_makespotcolor, 0, 1, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, spotname, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_mc_point arginfo_class_PDFlib_begin_mc
+
+#define arginfo_class_PDFlib_moveto arginfo_class_PDFlib_lineto
+
+#define arginfo_class_PDFlib_open_pdi_document arginfo_class_PDFlib_begin_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_open_pdi_page, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, pagenumber, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_pcos_get_number, 0, 2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_pcos_get_string, 0, 2, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_pcos_get_stream, 0, 3, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, path, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_poca_delete, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, container, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_class_PDFlib_poca_insert arginfo_class_PDFlib_poca_delete
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_poca_new, 0, 1, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+#define arginfo_class_PDFlib_poca_remove arginfo_class_PDFlib_poca_delete
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_process_pdi, 0, 3, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, doc, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, page, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_rect, 0, 4, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, height, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_restore arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_resume_page arginfo_class_PDFlib_end_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_rotate, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, phi, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_save arginfo_class_PDFlib_delete
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_scale, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, sx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, sy, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_set_graphics_option, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_set_gstate, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, gstate, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_set_info, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, value, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_set_layer_dependency, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_set_option, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#define arginfo_class_PDFlib_set_parameter arginfo_class_PDFlib_set_info
+
+#if PDFLIB_MAJORVERSION >= 9
+#define arginfo_class_PDFlib_set_text_option arginfo_class_PDFlib_set_graphics_option
+#endif
+
+#define arginfo_class_PDFlib_set_text_pos arginfo_class_PDFlib_lineto
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_set_value, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, key, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, value, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setcolor, 0, 6, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, fstype, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, colorspace, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, c1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c4, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setdash, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, b, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, w, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_setdashpattern arginfo_class_PDFlib_end_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setflat, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, flatness, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setfont, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, fontsize, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setlinecap, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, linecap, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setlinejoin, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, linejoin, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setlinewidth, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, width, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_setmatrix arginfo_class_PDFlib_concat
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_setmiterlimit, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, miter, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_shading, 0, 10, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, type, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, x0, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y0, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, x1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c1, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c2, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, c4, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_shading_pattern, 0, 2, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, shading, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, optlist, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_shfill, 0, 1, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, shading, IS_LONG, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_show arginfo_class_PDFlib_continue_text
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_show_xy, 0, 3, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, x, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, y, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_skew, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, alpha, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, beta, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_stringwidth, 0, 3, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, text, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, font, IS_LONG, 0)
+	ZEND_ARG_TYPE_INFO(0, fontsize, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlib_stroke arginfo_class_PDFlib_delete
+
+#define arginfo_class_PDFlib_suspend_page arginfo_class_PDFlib_end_document
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_translate, 0, 2, _IS_BOOL, 0)
+	ZEND_ARG_TYPE_INFO(0, tx, IS_DOUBLE, 0)
+	ZEND_ARG_TYPE_INFO(0, ty, IS_DOUBLE, 0)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_utf16_to_utf8, 0, 1, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, utf16string, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_utf8_to_utf16, 0, 2, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, utf8string, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, ordering, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_utf32_to_utf8, 0, 1, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, utf32string, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+#define arginfo_class_PDFlib_utf8_to_utf32 arginfo_class_PDFlib_utf8_to_utf16
+#endif
+
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_utf16_to_utf32, 0, 2, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, utf16string, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, ordering, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+#endif
+
+ZEND_BEGIN_ARG_WITH_RETURN_TYPE_INFO_EX(arginfo_class_PDFlib_utf32_to_utf16, 0, 2, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, utf32string, IS_STRING, 0)
+	ZEND_ARG_TYPE_INFO(0, ordering, IS_STRING, 0)
+ZEND_END_ARG_INFO()
+
+#define arginfo_class_PDFlibException_get_apiname arginfo_class_PDFlib_get_apiname
+
+#define arginfo_class_PDFlibException_get_errmsg arginfo_class_PDFlib_get_apiname
+
+#define arginfo_class_PDFlibException_get_errnum arginfo_class_PDFlib_get_errnum
+
+
+ZEND_FUNCTION(pdf_new);
+ZEND_FUNCTION(pdf_delete);
+ZEND_FUNCTION(pdf_get_pdi_parameter);
+ZEND_FUNCTION(pdf_open_image);
+ZEND_FUNCTION(pdf_open_pdi);
+ZEND_FUNCTION(pdf_setpolydash);
+ZEND_FUNCTION(pdf_show_boxed);
+ZEND_FUNCTION(pdf_activate_item);
+ZEND_FUNCTION(pdf_add_bookmark);
+ZEND_FUNCTION(pdf_add_launchlink);
+ZEND_FUNCTION(pdf_add_locallink);
+ZEND_FUNCTION(pdf_add_nameddest);
+ZEND_FUNCTION(pdf_add_note);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_add_path_point);
+#endif
+ZEND_FUNCTION(pdf_add_pdflink);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_add_portfolio_file);
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_add_portfolio_folder);
+#endif
+ZEND_FUNCTION(pdf_add_table_cell);
+ZEND_FUNCTION(pdf_add_textflow);
+ZEND_FUNCTION(pdf_add_thumbnail);
+ZEND_FUNCTION(pdf_add_weblink);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_align);
+#endif
+ZEND_FUNCTION(pdf_arc);
+ZEND_FUNCTION(pdf_arcn);
+ZEND_FUNCTION(pdf_attach_file);
+ZEND_FUNCTION(pdf_begin_document);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_begin_dpart);
+#endif
+ZEND_FUNCTION(pdf_begin_font);
+ZEND_FUNCTION(pdf_begin_glyph);
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_begin_glyph_ext);
+#endif
+ZEND_FUNCTION(pdf_begin_item);
+ZEND_FUNCTION(pdf_begin_layer);
+ZEND_FUNCTION(pdf_begin_mc);
+ZEND_FUNCTION(pdf_begin_page);
+ZEND_FUNCTION(pdf_begin_page_ext);
+ZEND_FUNCTION(pdf_begin_pattern);
+#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
+ZEND_FUNCTION(pdf_begin_pattern_ext);
+#endif
+ZEND_FUNCTION(pdf_begin_template);
+ZEND_FUNCTION(pdf_begin_template_ext);
+ZEND_FUNCTION(pdf_circle);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_circular_arc);
+#endif
+ZEND_FUNCTION(pdf_clip);
+ZEND_FUNCTION(pdf_close);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_close_font);
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_close_graphics);
+#endif
+ZEND_FUNCTION(pdf_close_image);
+ZEND_FUNCTION(pdf_close_pdi);
+ZEND_FUNCTION(pdf_close_pdi_document);
+ZEND_FUNCTION(pdf_close_pdi_page);
+ZEND_FUNCTION(pdf_closepath);
+ZEND_FUNCTION(pdf_closepath_fill_stroke);
+ZEND_FUNCTION(pdf_closepath_stroke);
+ZEND_FUNCTION(pdf_concat);
+ZEND_FUNCTION(pdf_continue_text);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_convert_to_unicode);
+#endif
+ZEND_FUNCTION(pdf_create_3dview);
+ZEND_FUNCTION(pdf_create_action);
+ZEND_FUNCTION(pdf_create_annotation);
+#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
+ZEND_FUNCTION(pdf_create_devicen);
+#endif
+ZEND_FUNCTION(pdf_create_bookmark);
+ZEND_FUNCTION(pdf_create_field);
+ZEND_FUNCTION(pdf_create_fieldgroup);
+ZEND_FUNCTION(pdf_create_gstate);
+ZEND_FUNCTION(pdf_create_pvf);
+ZEND_FUNCTION(pdf_create_textflow);
+ZEND_FUNCTION(pdf_curveto);
+ZEND_FUNCTION(pdf_define_layer);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_delete_path);
+#endif
+ZEND_FUNCTION(pdf_delete_pvf);
+ZEND_FUNCTION(pdf_delete_table);
+ZEND_FUNCTION(pdf_delete_textflow);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_draw_path);
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_ellipse);
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_elliptical_arc);
+#endif
+ZEND_FUNCTION(pdf_encoding_set_char);
+ZEND_FUNCTION(pdf_end_document);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_end_dpart);
+#endif
+ZEND_FUNCTION(pdf_end_font);
+ZEND_FUNCTION(pdf_end_glyph);
+ZEND_FUNCTION(pdf_end_item);
+ZEND_FUNCTION(pdf_end_layer);
+ZEND_FUNCTION(pdf_end_mc);
+ZEND_FUNCTION(pdf_end_page);
+ZEND_FUNCTION(pdf_end_page_ext);
+ZEND_FUNCTION(pdf_end_pattern);
+ZEND_FUNCTION(pdf_end_template);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_end_template_ext);
+#endif
+ZEND_FUNCTION(pdf_endpath);
+ZEND_FUNCTION(pdf_fill);
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_fill_graphicsblock);
+#endif
+ZEND_FUNCTION(pdf_fill_imageblock);
+ZEND_FUNCTION(pdf_fill_pdfblock);
+ZEND_FUNCTION(pdf_fill_stroke);
+ZEND_FUNCTION(pdf_fill_textblock);
+ZEND_FUNCTION(pdf_findfont);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_fit_graphics);
+#endif
+ZEND_FUNCTION(pdf_fit_image);
+ZEND_FUNCTION(pdf_fit_pdi_page);
+ZEND_FUNCTION(pdf_fit_table);
+ZEND_FUNCTION(pdf_fit_textflow);
+ZEND_FUNCTION(pdf_fit_textline);
+ZEND_FUNCTION(pdf_get_apiname);
+ZEND_FUNCTION(pdf_get_buffer);
+ZEND_FUNCTION(pdf_get_errmsg);
+ZEND_FUNCTION(pdf_get_errnum);
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_get_option);
+#endif
+ZEND_FUNCTION(pdf_get_parameter);
+ZEND_FUNCTION(pdf_get_pdi_value);
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_get_string);
+#endif
+ZEND_FUNCTION(pdf_get_value);
+ZEND_FUNCTION(pdf_info_font);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_info_graphics);
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_info_image);
+#endif
+ZEND_FUNCTION(pdf_info_matchbox);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_info_path);
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_info_pdi_page);
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_info_pvf);
+#endif
+ZEND_FUNCTION(pdf_info_table);
+ZEND_FUNCTION(pdf_info_textflow);
+ZEND_FUNCTION(pdf_info_textline);
+ZEND_FUNCTION(pdf_initgraphics);
+ZEND_FUNCTION(pdf_lineto);
+ZEND_FUNCTION(pdf_load_3ddata);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_load_asset);
+#endif
+ZEND_FUNCTION(pdf_load_font);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_load_graphics);
+#endif
+ZEND_FUNCTION(pdf_load_iccprofile);
+ZEND_FUNCTION(pdf_load_image);
+ZEND_FUNCTION(pdf_makespotcolor);
+ZEND_FUNCTION(pdf_mc_point);
+ZEND_FUNCTION(pdf_moveto);
+ZEND_FUNCTION(pdf_open_ccitt);
+ZEND_FUNCTION(pdf_open_file);
+ZEND_FUNCTION(pdf_open_image_file);
+ZEND_FUNCTION(pdf_open_pdi_document);
+ZEND_FUNCTION(pdf_open_pdi_page);
+ZEND_FUNCTION(pdf_pcos_get_number);
+ZEND_FUNCTION(pdf_pcos_get_string);
+ZEND_FUNCTION(pdf_pcos_get_stream);
+ZEND_FUNCTION(pdf_place_image);
+ZEND_FUNCTION(pdf_place_pdi_page);
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_poca_delete);
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_poca_insert);
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_poca_new);
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_poca_remove);
+#endif
+ZEND_FUNCTION(pdf_process_pdi);
+ZEND_FUNCTION(pdf_rect);
+ZEND_FUNCTION(pdf_restore);
+ZEND_FUNCTION(pdf_resume_page);
+ZEND_FUNCTION(pdf_rotate);
+ZEND_FUNCTION(pdf_save);
+ZEND_FUNCTION(pdf_scale);
+ZEND_FUNCTION(pdf_set_border_color);
+ZEND_FUNCTION(pdf_set_border_dash);
+ZEND_FUNCTION(pdf_set_border_style);
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_set_graphics_option);
+#endif
+ZEND_FUNCTION(pdf_set_gstate);
+ZEND_FUNCTION(pdf_set_info);
+ZEND_FUNCTION(pdf_set_layer_dependency);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_set_option);
+#endif
+ZEND_FUNCTION(pdf_set_parameter);
+#if PDFLIB_MAJORVERSION >= 9
+ZEND_FUNCTION(pdf_set_text_option);
+#endif
+ZEND_FUNCTION(pdf_set_text_pos);
+ZEND_FUNCTION(pdf_set_value);
+ZEND_FUNCTION(pdf_setcolor);
+ZEND_FUNCTION(pdf_setdash);
+ZEND_FUNCTION(pdf_setdashpattern);
+ZEND_FUNCTION(pdf_setflat);
+ZEND_FUNCTION(pdf_setfont);
+ZEND_FUNCTION(pdf_setgray);
+ZEND_FUNCTION(pdf_setgray_fill);
+ZEND_FUNCTION(pdf_setgray_stroke);
+ZEND_FUNCTION(pdf_setlinecap);
+ZEND_FUNCTION(pdf_setlinejoin);
+ZEND_FUNCTION(pdf_setlinewidth);
+ZEND_FUNCTION(pdf_setmatrix);
+ZEND_FUNCTION(pdf_setmiterlimit);
+ZEND_FUNCTION(pdf_setrgbcolor);
+ZEND_FUNCTION(pdf_setrgbcolor_fill);
+ZEND_FUNCTION(pdf_setrgbcolor_stroke);
+ZEND_FUNCTION(pdf_shading);
+ZEND_FUNCTION(pdf_shading_pattern);
+ZEND_FUNCTION(pdf_shfill);
+ZEND_FUNCTION(pdf_show);
+ZEND_FUNCTION(pdf_show_xy);
+ZEND_FUNCTION(pdf_skew);
+ZEND_FUNCTION(pdf_stringwidth);
+ZEND_FUNCTION(pdf_stroke);
+ZEND_FUNCTION(pdf_suspend_page);
+ZEND_FUNCTION(pdf_translate);
+ZEND_FUNCTION(pdf_utf16_to_utf8);
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_utf8_to_utf16);
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_utf32_to_utf8);
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_utf8_to_utf32);
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+ZEND_FUNCTION(pdf_utf16_to_utf32);
+#endif
+ZEND_FUNCTION(pdf_utf32_to_utf16);
+ZEND_METHOD(PDFlibException, get_apiname);
+ZEND_METHOD(PDFlibException, get_errmsg);
+ZEND_METHOD(PDFlibException, get_errnum);
+
+
+static const zend_function_entry ext_functions[] = {
+	ZEND_FE(pdf_new, arginfo_pdf_new)
+	ZEND_FE(pdf_delete, arginfo_pdf_delete)
+	ZEND_FE(pdf_get_pdi_parameter, arginfo_pdf_get_pdi_parameter)
+	ZEND_FE(pdf_open_image, arginfo_pdf_open_image)
+	ZEND_FE(pdf_open_pdi, arginfo_pdf_open_pdi)
+	ZEND_FE(pdf_setpolydash, arginfo_pdf_setpolydash)
+	ZEND_FE(pdf_show_boxed, arginfo_pdf_show_boxed)
+	ZEND_FE(pdf_activate_item, arginfo_pdf_activate_item)
+	ZEND_FE(pdf_add_bookmark, arginfo_pdf_add_bookmark)
+	ZEND_FE(pdf_add_launchlink, arginfo_pdf_add_launchlink)
+	ZEND_FE(pdf_add_locallink, arginfo_pdf_add_locallink)
+	ZEND_FE(pdf_add_nameddest, arginfo_pdf_add_nameddest)
+	ZEND_FE(pdf_add_note, arginfo_pdf_add_note)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_add_path_point, arginfo_pdf_add_path_point)
+#endif
+	ZEND_FE(pdf_add_pdflink, arginfo_pdf_add_pdflink)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_add_portfolio_file, arginfo_pdf_add_portfolio_file)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_add_portfolio_folder, arginfo_pdf_add_portfolio_folder)
+#endif
+	ZEND_FE(pdf_add_table_cell, arginfo_pdf_add_table_cell)
+	ZEND_FE(pdf_add_textflow, arginfo_pdf_add_textflow)
+	ZEND_FE(pdf_add_thumbnail, arginfo_pdf_add_thumbnail)
+	ZEND_FE(pdf_add_weblink, arginfo_pdf_add_weblink)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_align, arginfo_pdf_align)
+#endif
+	ZEND_FE(pdf_arc, arginfo_pdf_arc)
+	ZEND_FE(pdf_arcn, arginfo_pdf_arcn)
+	ZEND_FE(pdf_attach_file, arginfo_pdf_attach_file)
+	ZEND_FE(pdf_begin_document, arginfo_pdf_begin_document)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_begin_dpart, arginfo_pdf_begin_dpart)
+#endif
+	ZEND_FE(pdf_begin_font, arginfo_pdf_begin_font)
+	ZEND_FE(pdf_begin_glyph, arginfo_pdf_begin_glyph)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_begin_glyph_ext, arginfo_pdf_begin_glyph_ext)
+#endif
+	ZEND_FE(pdf_begin_item, arginfo_pdf_begin_item)
+	ZEND_FE(pdf_begin_layer, arginfo_pdf_begin_layer)
+	ZEND_FE(pdf_begin_mc, arginfo_pdf_begin_mc)
+	ZEND_FE(pdf_begin_page, arginfo_pdf_begin_page)
+	ZEND_FE(pdf_begin_page_ext, arginfo_pdf_begin_page_ext)
+	ZEND_FE(pdf_begin_pattern, arginfo_pdf_begin_pattern)
+#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
+	ZEND_FE(pdf_begin_pattern_ext, arginfo_pdf_begin_pattern_ext)
+#endif
+	ZEND_FE(pdf_begin_template, arginfo_pdf_begin_template)
+	ZEND_FE(pdf_begin_template_ext, arginfo_pdf_begin_template_ext)
+	ZEND_FE(pdf_circle, arginfo_pdf_circle)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_circular_arc, arginfo_pdf_circular_arc)
+#endif
+	ZEND_FE(pdf_clip, arginfo_pdf_clip)
+	ZEND_FE(pdf_close, arginfo_pdf_close)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_close_font, arginfo_pdf_close_font)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_close_graphics, arginfo_pdf_close_graphics)
+#endif
+	ZEND_FE(pdf_close_image, arginfo_pdf_close_image)
+	ZEND_FE(pdf_close_pdi, arginfo_pdf_close_pdi)
+	ZEND_FE(pdf_close_pdi_document, arginfo_pdf_close_pdi_document)
+	ZEND_FE(pdf_close_pdi_page, arginfo_pdf_close_pdi_page)
+	ZEND_FE(pdf_closepath, arginfo_pdf_closepath)
+	ZEND_FE(pdf_closepath_fill_stroke, arginfo_pdf_closepath_fill_stroke)
+	ZEND_FE(pdf_closepath_stroke, arginfo_pdf_closepath_stroke)
+	ZEND_FE(pdf_concat, arginfo_pdf_concat)
+	ZEND_FE(pdf_continue_text, arginfo_pdf_continue_text)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_convert_to_unicode, arginfo_pdf_convert_to_unicode)
+#endif
+	ZEND_FE(pdf_create_3dview, arginfo_pdf_create_3dview)
+	ZEND_FE(pdf_create_action, arginfo_pdf_create_action)
+	ZEND_FE(pdf_create_annotation, arginfo_pdf_create_annotation)
+#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
+	ZEND_FE(pdf_create_devicen, arginfo_pdf_create_devicen)
+#endif
+	ZEND_FE(pdf_create_bookmark, arginfo_pdf_create_bookmark)
+	ZEND_FE(pdf_create_field, arginfo_pdf_create_field)
+	ZEND_FE(pdf_create_fieldgroup, arginfo_pdf_create_fieldgroup)
+	ZEND_FE(pdf_create_gstate, arginfo_pdf_create_gstate)
+	ZEND_FE(pdf_create_pvf, arginfo_pdf_create_pvf)
+	ZEND_FE(pdf_create_textflow, arginfo_pdf_create_textflow)
+	ZEND_FE(pdf_curveto, arginfo_pdf_curveto)
+	ZEND_FE(pdf_define_layer, arginfo_pdf_define_layer)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_delete_path, arginfo_pdf_delete_path)
+#endif
+	ZEND_FE(pdf_delete_pvf, arginfo_pdf_delete_pvf)
+	ZEND_FE(pdf_delete_table, arginfo_pdf_delete_table)
+	ZEND_FE(pdf_delete_textflow, arginfo_pdf_delete_textflow)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_draw_path, arginfo_pdf_draw_path)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_ellipse, arginfo_pdf_ellipse)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_elliptical_arc, arginfo_pdf_elliptical_arc)
+#endif
+	ZEND_FE(pdf_encoding_set_char, arginfo_pdf_encoding_set_char)
+	ZEND_FE(pdf_end_document, arginfo_pdf_end_document)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_end_dpart, arginfo_pdf_end_dpart)
+#endif
+	ZEND_FE(pdf_end_font, arginfo_pdf_end_font)
+	ZEND_FE(pdf_end_glyph, arginfo_pdf_end_glyph)
+	ZEND_FE(pdf_end_item, arginfo_pdf_end_item)
+	ZEND_FE(pdf_end_layer, arginfo_pdf_end_layer)
+	ZEND_FE(pdf_end_mc, arginfo_pdf_end_mc)
+	ZEND_FE(pdf_end_page, arginfo_pdf_end_page)
+	ZEND_FE(pdf_end_page_ext, arginfo_pdf_end_page_ext)
+	ZEND_FE(pdf_end_pattern, arginfo_pdf_end_pattern)
+	ZEND_FE(pdf_end_template, arginfo_pdf_end_template)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_end_template_ext, arginfo_pdf_end_template_ext)
+#endif
+	ZEND_FE(pdf_endpath, arginfo_pdf_endpath)
+	ZEND_FE(pdf_fill, arginfo_pdf_fill)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_fill_graphicsblock, arginfo_pdf_fill_graphicsblock)
+#endif
+	ZEND_FE(pdf_fill_imageblock, arginfo_pdf_fill_imageblock)
+	ZEND_FE(pdf_fill_pdfblock, arginfo_pdf_fill_pdfblock)
+	ZEND_FE(pdf_fill_stroke, arginfo_pdf_fill_stroke)
+	ZEND_FE(pdf_fill_textblock, arginfo_pdf_fill_textblock)
+	ZEND_FE(pdf_findfont, arginfo_pdf_findfont)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_fit_graphics, arginfo_pdf_fit_graphics)
+#endif
+	ZEND_FE(pdf_fit_image, arginfo_pdf_fit_image)
+	ZEND_FE(pdf_fit_pdi_page, arginfo_pdf_fit_pdi_page)
+	ZEND_FE(pdf_fit_table, arginfo_pdf_fit_table)
+	ZEND_FE(pdf_fit_textflow, arginfo_pdf_fit_textflow)
+	ZEND_FE(pdf_fit_textline, arginfo_pdf_fit_textline)
+	ZEND_FE(pdf_get_apiname, arginfo_pdf_get_apiname)
+	ZEND_FE(pdf_get_buffer, arginfo_pdf_get_buffer)
+	ZEND_FE(pdf_get_errmsg, arginfo_pdf_get_errmsg)
+	ZEND_FE(pdf_get_errnum, arginfo_pdf_get_errnum)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_get_option, arginfo_pdf_get_option)
+#endif
+	ZEND_FE(pdf_get_parameter, arginfo_pdf_get_parameter)
+	ZEND_FE(pdf_get_pdi_value, arginfo_pdf_get_pdi_value)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_get_string, arginfo_pdf_get_string)
+#endif
+	ZEND_FE(pdf_get_value, arginfo_pdf_get_value)
+	ZEND_FE(pdf_info_font, arginfo_pdf_info_font)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_info_graphics, arginfo_pdf_info_graphics)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_info_image, arginfo_pdf_info_image)
+#endif
+	ZEND_FE(pdf_info_matchbox, arginfo_pdf_info_matchbox)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_info_path, arginfo_pdf_info_path)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_info_pdi_page, arginfo_pdf_info_pdi_page)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_info_pvf, arginfo_pdf_info_pvf)
+#endif
+	ZEND_FE(pdf_info_table, arginfo_pdf_info_table)
+	ZEND_FE(pdf_info_textflow, arginfo_pdf_info_textflow)
+	ZEND_FE(pdf_info_textline, arginfo_pdf_info_textline)
+	ZEND_FE(pdf_initgraphics, arginfo_pdf_initgraphics)
+	ZEND_FE(pdf_lineto, arginfo_pdf_lineto)
+	ZEND_FE(pdf_load_3ddata, arginfo_pdf_load_3ddata)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_load_asset, arginfo_pdf_load_asset)
+#endif
+	ZEND_FE(pdf_load_font, arginfo_pdf_load_font)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_load_graphics, arginfo_pdf_load_graphics)
+#endif
+	ZEND_FE(pdf_load_iccprofile, arginfo_pdf_load_iccprofile)
+	ZEND_FE(pdf_load_image, arginfo_pdf_load_image)
+	ZEND_FE(pdf_makespotcolor, arginfo_pdf_makespotcolor)
+	ZEND_FE(pdf_mc_point, arginfo_pdf_mc_point)
+	ZEND_FE(pdf_moveto, arginfo_pdf_moveto)
+	ZEND_FE(pdf_open_ccitt, arginfo_pdf_open_ccitt)
+	ZEND_FE(pdf_open_file, arginfo_pdf_open_file)
+	ZEND_FE(pdf_open_image_file, arginfo_pdf_open_image_file)
+	ZEND_FE(pdf_open_pdi_document, arginfo_pdf_open_pdi_document)
+	ZEND_FE(pdf_open_pdi_page, arginfo_pdf_open_pdi_page)
+	ZEND_FE(pdf_pcos_get_number, arginfo_pdf_pcos_get_number)
+	ZEND_FE(pdf_pcos_get_string, arginfo_pdf_pcos_get_string)
+	ZEND_FE(pdf_pcos_get_stream, arginfo_pdf_pcos_get_stream)
+	ZEND_FE(pdf_place_image, arginfo_pdf_place_image)
+	ZEND_FE(pdf_place_pdi_page, arginfo_pdf_place_pdi_page)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_poca_delete, arginfo_pdf_poca_delete)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_poca_insert, arginfo_pdf_poca_insert)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_poca_new, arginfo_pdf_poca_new)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_poca_remove, arginfo_pdf_poca_remove)
+#endif
+	ZEND_FE(pdf_process_pdi, arginfo_pdf_process_pdi)
+	ZEND_FE(pdf_rect, arginfo_pdf_rect)
+	ZEND_FE(pdf_restore, arginfo_pdf_restore)
+	ZEND_FE(pdf_resume_page, arginfo_pdf_resume_page)
+	ZEND_FE(pdf_rotate, arginfo_pdf_rotate)
+	ZEND_FE(pdf_save, arginfo_pdf_save)
+	ZEND_FE(pdf_scale, arginfo_pdf_scale)
+	ZEND_FE(pdf_set_border_color, arginfo_pdf_set_border_color)
+	ZEND_FE(pdf_set_border_dash, arginfo_pdf_set_border_dash)
+	ZEND_FE(pdf_set_border_style, arginfo_pdf_set_border_style)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_set_graphics_option, arginfo_pdf_set_graphics_option)
+#endif
+	ZEND_FE(pdf_set_gstate, arginfo_pdf_set_gstate)
+	ZEND_FE(pdf_set_info, arginfo_pdf_set_info)
+	ZEND_FE(pdf_set_layer_dependency, arginfo_pdf_set_layer_dependency)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_set_option, arginfo_pdf_set_option)
+#endif
+	ZEND_FE(pdf_set_parameter, arginfo_pdf_set_parameter)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_FE(pdf_set_text_option, arginfo_pdf_set_text_option)
+#endif
+	ZEND_FE(pdf_set_text_pos, arginfo_pdf_set_text_pos)
+	ZEND_FE(pdf_set_value, arginfo_pdf_set_value)
+	ZEND_FE(pdf_setcolor, arginfo_pdf_setcolor)
+	ZEND_FE(pdf_setdash, arginfo_pdf_setdash)
+	ZEND_FE(pdf_setdashpattern, arginfo_pdf_setdashpattern)
+	ZEND_FE(pdf_setflat, arginfo_pdf_setflat)
+	ZEND_FE(pdf_setfont, arginfo_pdf_setfont)
+	ZEND_FE(pdf_setgray, arginfo_pdf_setgray)
+	ZEND_FE(pdf_setgray_fill, arginfo_pdf_setgray_fill)
+	ZEND_FE(pdf_setgray_stroke, arginfo_pdf_setgray_stroke)
+	ZEND_FE(pdf_setlinecap, arginfo_pdf_setlinecap)
+	ZEND_FE(pdf_setlinejoin, arginfo_pdf_setlinejoin)
+	ZEND_FE(pdf_setlinewidth, arginfo_pdf_setlinewidth)
+	ZEND_FE(pdf_setmatrix, arginfo_pdf_setmatrix)
+	ZEND_FE(pdf_setmiterlimit, arginfo_pdf_setmiterlimit)
+	ZEND_FE(pdf_setrgbcolor, arginfo_pdf_setrgbcolor)
+	ZEND_FE(pdf_setrgbcolor_fill, arginfo_pdf_setrgbcolor_fill)
+	ZEND_FE(pdf_setrgbcolor_stroke, arginfo_pdf_setrgbcolor_stroke)
+	ZEND_FE(pdf_shading, arginfo_pdf_shading)
+	ZEND_FE(pdf_shading_pattern, arginfo_pdf_shading_pattern)
+	ZEND_FE(pdf_shfill, arginfo_pdf_shfill)
+	ZEND_FE(pdf_show, arginfo_pdf_show)
+	ZEND_FE(pdf_show_xy, arginfo_pdf_show_xy)
+	ZEND_FE(pdf_skew, arginfo_pdf_skew)
+	ZEND_FE(pdf_stringwidth, arginfo_pdf_stringwidth)
+	ZEND_FE(pdf_stroke, arginfo_pdf_stroke)
+	ZEND_FE(pdf_suspend_page, arginfo_pdf_suspend_page)
+	ZEND_FE(pdf_translate, arginfo_pdf_translate)
+	ZEND_FE(pdf_utf16_to_utf8, arginfo_pdf_utf16_to_utf8)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_utf8_to_utf16, arginfo_pdf_utf8_to_utf16)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_utf32_to_utf8, arginfo_pdf_utf32_to_utf8)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_utf8_to_utf32, arginfo_pdf_utf8_to_utf32)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_FE(pdf_utf16_to_utf32, arginfo_pdf_utf16_to_utf32)
+#endif
+	ZEND_FE(pdf_utf32_to_utf16, arginfo_pdf_utf32_to_utf16)
+	ZEND_FE_END
+};
+
+
+static const zend_function_entry class_PDFlib_methods[] = {
+	ZEND_ME_MAPPING(__construct, pdf_new, arginfo_class_PDFlib___construct, ZEND_ACC_PUBLIC)
+	ZEND_ME_MAPPING(delete, pdf_delete, arginfo_class_PDFlib_delete, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(get_pdi_parameter, pdf_get_pdi_parameter, arginfo_class_PDFlib_get_pdi_parameter, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(open_pdi, pdf_open_pdi, arginfo_class_PDFlib_open_pdi, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(open_image, pdf_open_image, arginfo_class_PDFlib_open_image, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setpolydash, pdf_setpolydash, arginfo_class_PDFlib_setpolydash, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(show_boxed, pdf_show_boxed, arginfo_class_PDFlib_show_boxed, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(activate_item, pdf_activate_item, arginfo_class_PDFlib_activate_item, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(add_nameddest, pdf_add_nameddest, arginfo_class_PDFlib_add_nameddest, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(add_path_point, pdf_add_path_point, arginfo_class_PDFlib_add_path_point, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(add_portfolio_file, pdf_add_portfolio_file, arginfo_class_PDFlib_add_portfolio_file, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(add_portfolio_folder, pdf_add_portfolio_folder, arginfo_class_PDFlib_add_portfolio_folder, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(add_table_cell, pdf_add_table_cell, arginfo_class_PDFlib_add_table_cell, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(add_textflow, pdf_add_textflow, arginfo_class_PDFlib_add_textflow, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(add_thumbnail, pdf_add_thumbnail, arginfo_class_PDFlib_add_thumbnail, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(align, pdf_align, arginfo_class_PDFlib_align, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(arc, pdf_arc, arginfo_class_PDFlib_arc, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(arcn, pdf_arcn, arginfo_class_PDFlib_arcn, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(begin_document, pdf_begin_document, arginfo_class_PDFlib_begin_document, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(begin_dpart, pdf_begin_dpart, arginfo_class_PDFlib_begin_dpart, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(begin_font, pdf_begin_font, arginfo_class_PDFlib_begin_font, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(begin_glyph, pdf_begin_glyph, arginfo_class_PDFlib_begin_glyph, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(begin_glyph_ext, pdf_begin_glyph_ext, arginfo_class_PDFlib_begin_glyph_ext, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(begin_item, pdf_begin_item, arginfo_class_PDFlib_begin_item, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(begin_layer, pdf_begin_layer, arginfo_class_PDFlib_begin_layer, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(begin_mc, pdf_begin_mc, arginfo_class_PDFlib_begin_mc, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(begin_page_ext, pdf_begin_page_ext, arginfo_class_PDFlib_begin_page_ext, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(begin_pattern, pdf_begin_pattern, arginfo_class_PDFlib_begin_pattern, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9 && (PDFLIB_MINORVERSION >= 1 || PDFLIB_REVISION >= 2)
+	ZEND_ME_MAPPING(begin_pattern_ext, pdf_begin_pattern_ext, arginfo_class_PDFlib_begin_pattern_ext, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(begin_template, pdf_begin_template, arginfo_class_PDFlib_begin_template, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(begin_template_ext, pdf_begin_template_ext, arginfo_class_PDFlib_begin_template_ext, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(circle, pdf_circle, arginfo_class_PDFlib_circle, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(circular_arc, pdf_circular_arc, arginfo_class_PDFlib_circular_arc, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(clip, pdf_clip, arginfo_class_PDFlib_clip, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(close_font, pdf_close_font, arginfo_class_PDFlib_close_font, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(close_graphics, pdf_close_graphics, arginfo_class_PDFlib_close_graphics, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(close_image, pdf_close_image, arginfo_class_PDFlib_close_image, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(close_pdi, pdf_close_pdi, arginfo_class_PDFlib_close_pdi, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(close_pdi_document, pdf_close_pdi_document, arginfo_class_PDFlib_close_pdi_document, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(close_pdi_page, pdf_close_pdi_page, arginfo_class_PDFlib_close_pdi_page, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(closepath, pdf_closepath, arginfo_class_PDFlib_closepath, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(closepath_fill_stroke, pdf_closepath_fill_stroke, arginfo_class_PDFlib_closepath_fill_stroke, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(closepath_stroke, pdf_closepath_stroke, arginfo_class_PDFlib_closepath_stroke, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(concat, pdf_concat, arginfo_class_PDFlib_concat, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(continue_text, pdf_continue_text, arginfo_class_PDFlib_continue_text, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(convert_to_unicode, pdf_convert_to_unicode, arginfo_class_PDFlib_convert_to_unicode, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(create_3dview, pdf_create_3dview, arginfo_class_PDFlib_create_3dview, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(create_action, pdf_create_action, arginfo_class_PDFlib_create_action, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(create_annotation, pdf_create_annotation, arginfo_class_PDFlib_create_annotation, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9 && PDFLIB_MINORVERSION >= 1
+	ZEND_ME_MAPPING(create_devicen, pdf_create_devicen, arginfo_class_PDFlib_create_devicen, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(create_bookmark, pdf_create_bookmark, arginfo_class_PDFlib_create_bookmark, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(create_field, pdf_create_field, arginfo_class_PDFlib_create_field, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(create_fieldgroup, pdf_create_fieldgroup, arginfo_class_PDFlib_create_fieldgroup, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(create_gstate, pdf_create_gstate, arginfo_class_PDFlib_create_gstate, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(create_pvf, pdf_create_pvf, arginfo_class_PDFlib_create_pvf, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(create_textflow, pdf_create_textflow, arginfo_class_PDFlib_create_textflow, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(curveto, pdf_curveto, arginfo_class_PDFlib_curveto, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(define_layer, pdf_define_layer, arginfo_class_PDFlib_define_layer, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(delete_path, pdf_delete_path, arginfo_class_PDFlib_delete_path, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(delete_pvf, pdf_delete_pvf, arginfo_class_PDFlib_delete_pvf, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(delete_table, pdf_delete_table, arginfo_class_PDFlib_delete_table, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(delete_textflow, pdf_delete_textflow, arginfo_class_PDFlib_delete_textflow, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(draw_path, pdf_draw_path, arginfo_class_PDFlib_draw_path, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(ellipse, pdf_ellipse, arginfo_class_PDFlib_ellipse, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(elliptical_arc, pdf_elliptical_arc, arginfo_class_PDFlib_elliptical_arc, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(encoding_set_char, pdf_encoding_set_char, arginfo_class_PDFlib_encoding_set_char, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_document, pdf_end_document, arginfo_class_PDFlib_end_document, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(end_dpart, pdf_end_dpart, arginfo_class_PDFlib_end_dpart, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(end_font, pdf_end_font, arginfo_class_PDFlib_end_font, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_glyph, pdf_end_glyph, arginfo_class_PDFlib_end_glyph, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_item, pdf_end_item, arginfo_class_PDFlib_end_item, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_layer, pdf_end_layer, arginfo_class_PDFlib_end_layer, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_mc, pdf_end_mc, arginfo_class_PDFlib_end_mc, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_page_ext, pdf_end_page_ext, arginfo_class_PDFlib_end_page_ext, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_pattern, pdf_end_pattern, arginfo_class_PDFlib_end_pattern, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(end_template, pdf_end_template, arginfo_class_PDFlib_end_template, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(end_template_ext, pdf_end_template_ext, arginfo_class_PDFlib_end_template_ext, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(endpath, pdf_endpath, arginfo_class_PDFlib_endpath, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fill, pdf_fill, arginfo_class_PDFlib_fill, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(fill_graphicsblock, pdf_fill_graphicsblock, arginfo_class_PDFlib_fill_graphicsblock, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(fill_imageblock, pdf_fill_imageblock, arginfo_class_PDFlib_fill_imageblock, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fill_pdfblock, pdf_fill_pdfblock, arginfo_class_PDFlib_fill_pdfblock, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fill_stroke, pdf_fill_stroke, arginfo_class_PDFlib_fill_stroke, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fill_textblock, pdf_fill_textblock, arginfo_class_PDFlib_fill_textblock, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(fit_graphics, pdf_fit_graphics, arginfo_class_PDFlib_fit_graphics, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(fit_image, pdf_fit_image, arginfo_class_PDFlib_fit_image, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fit_pdi_page, pdf_fit_pdi_page, arginfo_class_PDFlib_fit_pdi_page, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fit_table, pdf_fit_table, arginfo_class_PDFlib_fit_table, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fit_textflow, pdf_fit_textflow, arginfo_class_PDFlib_fit_textflow, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(fit_textline, pdf_fit_textline, arginfo_class_PDFlib_fit_textline, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(get_apiname, pdf_get_apiname, arginfo_class_PDFlib_get_apiname, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(get_buffer, pdf_get_buffer, arginfo_class_PDFlib_get_buffer, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(get_errmsg, pdf_get_errmsg, arginfo_class_PDFlib_get_errmsg, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(get_errnum, pdf_get_errnum, arginfo_class_PDFlib_get_errnum, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(get_option, pdf_get_option, arginfo_class_PDFlib_get_option, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(get_parameter, pdf_get_parameter, arginfo_class_PDFlib_get_parameter, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(get_pdi_value, pdf_get_pdi_value, arginfo_class_PDFlib_get_pdi_value, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(get_string, pdf_get_string, arginfo_class_PDFlib_get_string, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(get_value, pdf_get_value, arginfo_class_PDFlib_get_value, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(info_font, pdf_info_font, arginfo_class_PDFlib_info_font, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(info_graphics, pdf_info_graphics, arginfo_class_PDFlib_info_graphics, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(info_image, pdf_info_image, arginfo_class_PDFlib_info_image, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(info_matchbox, pdf_info_matchbox, arginfo_class_PDFlib_info_matchbox, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(info_path, pdf_info_path, arginfo_class_PDFlib_info_path, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(info_pdi_page, pdf_info_pdi_page, arginfo_class_PDFlib_info_pdi_page, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(info_pvf, pdf_info_pvf, arginfo_class_PDFlib_info_pvf, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(info_table, pdf_info_table, arginfo_class_PDFlib_info_table, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(info_textflow, pdf_info_textflow, arginfo_class_PDFlib_info_textflow, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(info_textline, pdf_info_textline, arginfo_class_PDFlib_info_textline, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(initgraphics, pdf_initgraphics, arginfo_class_PDFlib_initgraphics, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(lineto, pdf_lineto, arginfo_class_PDFlib_lineto, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(load_3ddata, pdf_load_3ddata, arginfo_class_PDFlib_load_3ddata, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(load_asset, pdf_load_asset, arginfo_class_PDFlib_load_asset, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(load_font, pdf_load_font, arginfo_class_PDFlib_load_font, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(load_graphics, pdf_load_graphics, arginfo_class_PDFlib_load_graphics, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(load_iccprofile, pdf_load_iccprofile, arginfo_class_PDFlib_load_iccprofile, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(load_image, pdf_load_image, arginfo_class_PDFlib_load_image, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(makespotcolor, pdf_makespotcolor, arginfo_class_PDFlib_makespotcolor, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(mc_point, pdf_mc_point, arginfo_class_PDFlib_mc_point, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(moveto, pdf_moveto, arginfo_class_PDFlib_moveto, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(open_pdi_document, pdf_open_pdi_document, arginfo_class_PDFlib_open_pdi_document, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(open_pdi_page, pdf_open_pdi_page, arginfo_class_PDFlib_open_pdi_page, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(pcos_get_number, pdf_pcos_get_number, arginfo_class_PDFlib_pcos_get_number, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(pcos_get_string, pdf_pcos_get_string, arginfo_class_PDFlib_pcos_get_string, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(pcos_get_stream, pdf_pcos_get_stream, arginfo_class_PDFlib_pcos_get_stream, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(poca_delete, pdf_poca_delete, arginfo_class_PDFlib_poca_delete, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(poca_insert, pdf_poca_insert, arginfo_class_PDFlib_poca_insert, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(poca_new, pdf_poca_new, arginfo_class_PDFlib_poca_new, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if (PDFLIB_MAJORVERSION >= 8 && PDFLIB_MINORVERSION >= 1) || PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(poca_remove, pdf_poca_remove, arginfo_class_PDFlib_poca_remove, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(process_pdi, pdf_process_pdi, arginfo_class_PDFlib_process_pdi, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(rect, pdf_rect, arginfo_class_PDFlib_rect, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(restore, pdf_restore, arginfo_class_PDFlib_restore, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(resume_page, pdf_resume_page, arginfo_class_PDFlib_resume_page, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(rotate, pdf_rotate, arginfo_class_PDFlib_rotate, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(save, pdf_save, arginfo_class_PDFlib_save, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(scale, pdf_scale, arginfo_class_PDFlib_scale, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(set_graphics_option, pdf_set_graphics_option, arginfo_class_PDFlib_set_graphics_option, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(set_gstate, pdf_set_gstate, arginfo_class_PDFlib_set_gstate, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(set_info, pdf_set_info, arginfo_class_PDFlib_set_info, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(set_layer_dependency, pdf_set_layer_dependency, arginfo_class_PDFlib_set_layer_dependency, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(set_option, pdf_set_option, arginfo_class_PDFlib_set_option, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(set_parameter, pdf_set_parameter, arginfo_class_PDFlib_set_parameter, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 9
+	ZEND_ME_MAPPING(set_text_option, pdf_set_text_option, arginfo_class_PDFlib_set_text_option, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(set_text_pos, pdf_set_text_pos, arginfo_class_PDFlib_set_text_pos, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(set_value, pdf_set_value, arginfo_class_PDFlib_set_value, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setcolor, pdf_setcolor, arginfo_class_PDFlib_setcolor, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setdash, pdf_setdash, arginfo_class_PDFlib_setdash, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setdashpattern, pdf_setdashpattern, arginfo_class_PDFlib_setdashpattern, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setflat, pdf_setflat, arginfo_class_PDFlib_setflat, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setfont, pdf_setfont, arginfo_class_PDFlib_setfont, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setlinecap, pdf_setlinecap, arginfo_class_PDFlib_setlinecap, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setlinejoin, pdf_setlinejoin, arginfo_class_PDFlib_setlinejoin, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setlinewidth, pdf_setlinewidth, arginfo_class_PDFlib_setlinewidth, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setmatrix, pdf_setmatrix, arginfo_class_PDFlib_setmatrix, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(setmiterlimit, pdf_setmiterlimit, arginfo_class_PDFlib_setmiterlimit, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(shading, pdf_shading, arginfo_class_PDFlib_shading, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(shading_pattern, pdf_shading_pattern, arginfo_class_PDFlib_shading_pattern, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(shfill, pdf_shfill, arginfo_class_PDFlib_shfill, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(show, pdf_show, arginfo_class_PDFlib_show, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(show_xy, pdf_show_xy, arginfo_class_PDFlib_show_xy, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(skew, pdf_skew, arginfo_class_PDFlib_skew, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(stringwidth, pdf_stringwidth, arginfo_class_PDFlib_stringwidth, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(stroke, pdf_stroke, arginfo_class_PDFlib_stroke, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(suspend_page, pdf_suspend_page, arginfo_class_PDFlib_suspend_page, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(translate, pdf_translate, arginfo_class_PDFlib_translate, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME_MAPPING(utf16_to_utf8, pdf_utf16_to_utf8, arginfo_class_PDFlib_utf16_to_utf8, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(utf8_to_utf16, pdf_utf8_to_utf16, arginfo_class_PDFlib_utf8_to_utf16, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(utf32_to_utf8, pdf_utf32_to_utf8, arginfo_class_PDFlib_utf32_to_utf8, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(utf8_to_utf32, pdf_utf8_to_utf32, arginfo_class_PDFlib_utf8_to_utf32, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+#if PDFLIB_MAJORVERSION >= 8
+	ZEND_ME_MAPPING(utf16_to_utf32, pdf_utf16_to_utf32, arginfo_class_PDFlib_utf16_to_utf32, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+#endif
+	ZEND_ME_MAPPING(utf32_to_utf16, pdf_utf32_to_utf16, arginfo_class_PDFlib_utf32_to_utf16, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_FE_END
+};
+
+
+static const zend_function_entry class_PDFlibException_methods[] = {
+	ZEND_ME(PDFlibException, get_apiname, arginfo_class_PDFlibException_get_apiname, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME(PDFlibException, get_errmsg, arginfo_class_PDFlibException_get_errmsg, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_ME(PDFlibException, get_errnum, arginfo_class_PDFlibException_get_errnum, ZEND_ACC_PUBLIC|ZEND_ACC_FINAL)
+	ZEND_FE_END
+};

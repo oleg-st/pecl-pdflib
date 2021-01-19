@@ -28,6 +28,7 @@
 #include "zend_exceptions.h"
 #include "pdflib.h"
 #include "php_pdf.h"
+#include "pdflib_arginfo.h"
 
 #if PDFLIB_MAJORVERSION <= 6
 #error PDFlib 6 and earlier are no longer supported (use pdflib-2.x.x pecl package instead)
@@ -37,6 +38,13 @@
  */
 
 static int le_pdf;
+
+#if PHP_MAJOR_VERSION >= 8
+/* removed in PHP 8, BC only */
+#define TSRMLS_C
+#define TSRMLS_CC
+#define TSRMLS_DC
+#endif
 
 typedef struct _pdflib_object {
 #if PHP_MAJOR_VERSION >= 7
@@ -48,25 +56,17 @@ typedef struct _pdflib_object {
 #endif
 } pdflib_object;
 
+#if PHP_MAJOR_VERSION >= 8
+#define PDF_PROP_OBJ(obj) Z_OBJ_P(obj)
+#else
+#define PDF_PROP_OBJ(obj) obj
+#endif
+
 static inline pdflib_object *php_pdflib_fetch_object(zend_object *obj) {
     return (pdflib_object *)((char*)(obj) - XtOffsetOf(pdflib_object, zobj));
 }
 #define Z_PDFLIB_OBJ_P(zv) php_pdflib_fetch_object(Z_OBJ_P(zv));
 
-
-zend_function_entry pdf_functions[] = {
-#define _WRAP_FUNCTION_ENTRY
-#include "php_wrapped.c"
-#undef _WRAP_FUNCTION_ENTRY
-    PHP_FE(pdf_new, NULL)
-    PHP_FE(pdf_delete, NULL)
-    PHP_FE(pdf_get_pdi_parameter, NULL)
-    PHP_FE(pdf_open_image, NULL)
-    PHP_FE(pdf_open_pdi, NULL)
-    PHP_FE(pdf_setpolydash, NULL)
-    PHP_FE(pdf_show_boxed, NULL)
-    PHP_FE_END
-};
 /* }}} */
 
 /* {{{ pdflib_methods[] OO-Mapping
@@ -80,24 +80,6 @@ zend_class_entry *pdflib_exception_class;
 
 static zend_object_handlers pdflib_handlers;
 
-zend_function_entry pdflib_methods[] = {
-    /* if we make the class PDFlib extendable, the constructor should
-     * not become final */
-    PHP_ME_MAPPING(__construct, pdf_new, NULL, ZEND_ACC_CTOR|ZEND_ACC_PUBLIC)
-    PDF_ME_MAPPING(delete, pdf_delete, NULL)
-    PDF_ME_MAPPING(get_pdi_parameter, pdf_get_pdi_parameter, NULL)
-    PDF_ME_MAPPING(open_pdi, pdf_open_pdi, NULL)
-    PDF_ME_MAPPING(open_image, pdf_open_image, NULL)
-    PDF_ME_MAPPING(setpolydash, pdf_setpolydash, NULL)
-    PDF_ME_MAPPING(show_boxed, pdf_show_boxed, NULL)
-
-#define _WRAP_FUNCTION_ENTRY2
-#include "php_wrapped.c"
-#undef _WRAP_FUNCTION_ENTRY2
-
-    PHP_FE_END
-};
-
 /* }}} */
 
 /* {{{ PDFlib_module_entry
@@ -105,7 +87,7 @@ zend_function_entry pdflib_methods[] = {
 zend_module_entry PDFlib_module_entry = {
     STANDARD_MODULE_HEADER,
     "PDFlib",
-    pdf_functions,
+    ext_functions,
     PHP_MINIT(PDFlib),
     PHP_MSHUTDOWN(PDFlib),
     NULL,
@@ -217,14 +199,14 @@ static void _pdf_exception(int errnum, const char *apiname,
         object_init_ex(&ex, pdflib_exception_class);
 
         if (apiname) {
-           zend_update_property_string(def_ex, &ex, "apiname",
+           zend_update_property_string(def_ex, PDF_PROP_OBJ(&ex), "apiname",
                             sizeof("apiname")-1, (char *)apiname TSRMLS_CC);
         }
         if (errmsg) {
-           zend_update_property_string(def_ex, &ex, "message",
+           zend_update_property_string(def_ex, PDF_PROP_OBJ(&ex), "message",
                             sizeof("message")-1, (char *)errmsg TSRMLS_CC);
         }
-        zend_update_property_long(def_ex, &ex, "code", sizeof("code")-1,
+        zend_update_property_long(def_ex, PDF_PROP_OBJ(&ex), "code", sizeof("code")-1,
             errnum TSRMLS_CC);
         zend_throw_exception_object(&ex TSRMLS_CC);
 #else /* PHP_MAJOR_VERSION >= 7 */
@@ -410,7 +392,7 @@ PHP_MINIT_FUNCTION(PDFlib)
 
     /* add PDFlibException class */
     {
-        INIT_CLASS_ENTRY(ce_ex, "PDFlibException", PDFlibException_methods);
+        INIT_CLASS_ENTRY(ce_ex, "PDFlibException", class_PDFlibException_methods);
 #if PHP_MAJOR_VERSION >= 7
         pdflib_exception_class = zend_register_internal_class_ex(&ce_ex,
                 zend_exception_get_default(TSRMLS_C) TSRMLS_CC);
@@ -427,7 +409,7 @@ PHP_MINIT_FUNCTION(PDFlib)
     {
         memcpy(&pdflib_handlers, zend_get_std_object_handlers(), sizeof(zend_object_handlers));
 
-        INIT_CLASS_ENTRY(ce, "PDFlib", pdflib_methods);
+        INIT_CLASS_ENTRY(ce, "PDFlib", class_PDFlib_methods);
         ce.create_object = pdflib_object_new;
         pdflib_handlers.clone_obj = NULL;
 #if PHP_MAJOR_VERSION >= 7
@@ -460,13 +442,13 @@ PHP_METHOD(PDFlibException, get_apiname)
     zend_string *apiname;
 
     apiname = zval_get_string(zend_read_property(pdflib_exception_class,
-                        this_ptr, "apiname", sizeof("apiname")-1, 1, &rv));
-    RETURN_STR(apiname)
+                        PDF_PROP_OBJ(this_ptr), "apiname", sizeof("apiname")-1, 1, &rv));
+    RETURN_STR(apiname);
 #else /* PHP_MAJOR_VERSION >= 7 */
     zval *apiname;
     char *retbuf;
 
-    apiname = zend_read_property(pdflib_exception_class, this_ptr, "apiname",
+    apiname = zend_read_property(pdflib_exception_class, PDF_PROP_OBJ(this_ptr), "apiname",
                 sizeof("apiname")-1, 1 TSRMLS_CC);
     retbuf = Z_STRVAL_P(apiname);
 
@@ -480,14 +462,14 @@ PHP_METHOD(PDFlibException, get_errmsg)
     zval rv, *this_ptr = getThis();
     zend_string *message;
 
-    message = zval_get_string(zend_read_property(pdflib_exception_class, this_ptr, "message",
+    message = zval_get_string(zend_read_property(pdflib_exception_class, PDF_PROP_OBJ(this_ptr), "message",
                 sizeof("message")-1, 1, &rv));
-    RETURN_STR(message)
+    RETURN_STR(message);
 #else /* PHP_MAJOR_VERSION >= 7 */
     zval *message;
     char *retbuf;
 
-    message = zend_read_property(pdflib_exception_class, this_ptr, "message",
+    message = zend_read_property(pdflib_exception_class, PDF_PROP_OBJ(this_ptr), "message",
                 sizeof("message")-1, 1 TSRMLS_CC);
     retbuf = Z_STRVAL_P(message);
 
@@ -502,7 +484,7 @@ PHP_METHOD(PDFlibException, get_errnum)
     zval *this_ptr = getThis();
     long retval;
 
-    code = zend_read_property(pdflib_exception_class, this_ptr, "code",
+    code = zend_read_property(pdflib_exception_class, PDF_PROP_OBJ(this_ptr), "code",
                 sizeof("code")-1, 1, &rv);
     retval = Z_LVAL_P(code);
 
@@ -565,7 +547,7 @@ PHP_FUNCTION(pdf_get_pdi_parameter)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -647,7 +629,7 @@ PHP_FUNCTION(pdf_open_pdi)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -705,6 +687,7 @@ PHP_FUNCTION(pdf_new)
 
     if (pdf != NULL) {
         pdf_try {
+#if PDFLIB_MAJORVERSION >= 8
             /* Trigger special handling of PDFlib-handles for PHP */
             PDF_set_option(pdf, "hastobepos=true");
 #if PHP_MAJOR_VERSION >= 7
@@ -712,6 +695,15 @@ PHP_FUNCTION(pdf_new)
 #else /* PHP_MAJOR_VERSION >= 7 */
             PDF_set_option(pdf, "binding=PHP5");
 #endif /* PHP_MAJOR_VERSION >= 7 */
+#else
+            /* Trigger special handling of PDFlib-handles for PHP */
+            PDF_set_parameter(pdf, "hastobepos", "true");
+    #if PHP_MAJOR_VERSION >= 7
+            PDF_set_parameter(pdf, "binding", "PHP7");
+#else /* PHP_MAJOR_VERSION >= 7 */
+            PDF_set_parameter(pdf, "binding", "PHP5");
+#endif /* PHP_MAJOR_VERSION >= 7 */
+#endif
         } pdf_catch;
     } else {
         _pdf_exception(999, "PDF_new",
@@ -721,7 +713,11 @@ PHP_FUNCTION(pdf_new)
 
     if (object) {
         pdf_try {
+#if PDFLIB_MAJORVERSION >= 8
             PDF_set_option(pdf, "objorient=true");
+#else
+            PDF_set_parameter(pdf, "objorient", "true");
+#endif
         } pdf_catch;
 #if PHP_MAJOR_VERSION >= 7
         zend_object *zobj = Z_OBJ_P(getThis());
@@ -786,7 +782,7 @@ PHP_FUNCTION(pdf_open_image)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
@@ -889,7 +885,7 @@ PHP_FUNCTION(pdf_show_boxed)
 #endif /* PHP_MAJOR_VERSION >= 7 */
         P_FROM_OBJECT(pdf, object);
     } else {
-        SET_ERROR_HANDLING(EH_NORMAL, pdflib_exception_class);
+        SET_ERROR_HANDLING(EH_THROW, pdflib_exception_class);
         {
             zval *p;
 #if PHP_MAJOR_VERSION >= 7
